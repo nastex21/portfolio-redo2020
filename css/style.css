@@ -22,7 +22,8 @@ body {
     background-color: #464646;
   }
 
-  .left-container > source {
+  .image-left {
+    height: 100vh;
     width: 100%;
 }
 }
