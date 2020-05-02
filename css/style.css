@@ -48,4 +48,16 @@ body {
   .right-container {
     height: 100%;
   }
+
+  .navlink-address {
+    color: orangered;
+  }
+
+  .active a:after {
+    content: '';
+    height: 2px;
+    background: orangered;
+    display:block;
+    margin-top: 2px;
+}
 }
