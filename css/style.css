@@ -32,7 +32,7 @@ body {
    display: none;
  }
 
-  #hamburger {
+  #burgerID {
    position: absolute;
    top: 0;
    right: 0;
@@ -97,7 +97,7 @@ body {
     height: 100%;
   }
 
-  #myNav, #hamburger {
+  #myNav, #burgerID {
     display: none;
   }
 
