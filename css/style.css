@@ -116,13 +116,13 @@ body {
   }
 
   .navlink-address {
-    color: orangered;
+    color: rgb(0,180,255);
   }
 
   .active a:after {
     content: "";
     height: 2px;
-    background: orangered;
+    background: rgb(0,180,255);
     display: block;
     margin-top: 2px;
   }
