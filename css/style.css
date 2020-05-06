@@ -149,7 +149,23 @@ body {
     }
   }
 
-  .navlink-address {
+  .navbar-nav > li {
+    float: left;
+    position: relative;
+  }
+
+  .navbar-dark .navbar-nav .active a::after {
+    position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  content: " ";
+  color: rgb(0, 180, 255);
+  border-bottom: 5px solid rgb(0, 180, 255);
+  }
+
+/*   .navlink-address {
     color: rgb(0, 180, 255);
   }
 
@@ -161,5 +177,5 @@ body {
     background: rgb(0, 180, 255);
     display: block;
     margin-top: 2px;
-  }
+  } */
 }
