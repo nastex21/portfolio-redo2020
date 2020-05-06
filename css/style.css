@@ -1,10 +1,18 @@
+:root {
+  --color-white: rgb(255, 255, 255);
+  --color-blue: rgb(0, 180, 255);
+  --color-light-grey: rgb(238, 238, 238);
+  --color-dark-grey: rgb(81, 81, 81); 
+  --main-bg-color: rgb(25, 25, 25);
+}
+
 html {
   height: 100%;
 }
 
 body {
-  background-color: rgb(81, 81, 81);
-  color: white;
+  background-color: var(--main-bg-color);
+  color: var(--color-white);
   min-height: 100%;
   width: 100%;
   margin: 0;
@@ -13,12 +21,16 @@ body {
   overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-blue);
+}
+
 /* Mobile */
 @media only screen and (max-width: 767.999px) {
   .left-container {
     position: relative;
     width: 100%;
-    background-color: rgb(81, 81, 81);
+    background-color: var(--main-bg-color);
   }
 
   .image-left {
@@ -154,9 +166,9 @@ body {
     position: relative;
   }
 
-  .navbar-dark .navbar-nav .active a::after {
-    position: absolute;
-  bottom: -10px;
+  .navbar-nav .active a::after {
+  position: absolute;
+  bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
@@ -165,17 +177,17 @@ body {
   border-bottom: 5px solid rgb(0, 180, 255);
   }
 
-/*   .navlink-address {
-    color: rgb(0, 180, 255);
-  }
-
-  .active a:after {
-    content: "";
-    right: 50%;
-    width: 50%;
+  .navbar-nav a:hover::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    content: " ";
     height: 2px;
-    background: rgb(0, 180, 255);
-    display: block;
-    margin-top: 2px;
-  } */
+    pointer-events: none;
+    color: rgb(0, 180, 255);
+    border-bottom: 5px solid rgb(0, 180, 255);
+    }
+
 }
