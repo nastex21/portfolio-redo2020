@@ -1,9 +1,10 @@
 :root {
   --color-white: rgb(255, 255, 255);
-  --color-blue: rgb(0, 180, 255);
-  --color-light-grey: rgb(238, 238, 238);
-  --color-dark-grey: rgb(81, 81, 81); 
-  --main-bg-color: rgb(25, 25, 25);
+  --color-accent1: rgb(239, 131, 84);
+  --color-accent2: rgb(79, 93, 117);
+  --color-text-color: rgb(188, 193, 207);
+  --main-bg-color: rgb(37, 39, 49);
+  --font-text-article: 2em;
 }
 
 html {
@@ -21,8 +22,39 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--color-blue);
+h1, h2, h3, .nav-link {
+  color: var(--color-white) !important;
+}
+
+h4, h5, h6 {
+  color: var(--color-accent1);
+}
+
+p, footer {
+  color: var(--color-text-color);
+  font-size: var(--font-text-article);
+}
+
+hr {
+height: 1px;
+background-color: var(--color-accent2);
+border: none;
+}
+
+.navbar {
+  background-color: var(--main-bg-color) !important;
+
+}
+
+.navlink-address, .nav-link:hover {
+  color: var(--color-accent1) !important;
+}
+
+.copyright {
+  font-family: Arial,
+       "Helvetica Neue",
+       Helvetica,
+       sans-serif;
 }
 
 /* Mobile */
@@ -81,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 8px;
     text-decoration: none;
     font-size: 20px;
-    color: #818181;
+    color: var(--color-white);
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
   }
@@ -89,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
   /* When you mouse over the navigation links, change their color */
   .overlay a:hover,
   .overlay a:focus {
-    color: #f1f1f1;
+    color: var(--color-accent1);
   }
 
   /* Position the close button (top right corner) */
@@ -119,7 +151,6 @@ h1, h2, h3, h4, h5, h6 {
 
   .left-container {
     width: 100%;
-    background-color: #464646;
   }
 
   .image-left {
@@ -136,11 +167,11 @@ h1, h2, h3, h4, h5, h6 {
   .navbarDiv {
     margin-left: auto;
     margin-right: 0;
-    width: 50%
+    width: 50%;
   }
 
   #navbarIndex {
-    animation: .5s linear 0s 1 slideInFromRight; 
+    animation: 0.5s linear 0s 1 slideInFromRight;
     visibility: visibile;
   }
 
@@ -166,28 +197,29 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
   }
 
-  .navbar-nav .active a::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  content: " ";
-  color: rgb(0, 180, 255);
-  border-bottom: 5px solid rgb(0, 180, 255);
+  .nav-link:hover {
+    color: var(--color-accent1);
   }
 
-  .navbar-nav a:hover::after {
+  .active > a::after {
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
+    left: 35%;
+    width: 30%;
+    content: " ";
+    color: var(--color-blue);
+    border-bottom: 5px solid var(--color-accent1);
+  }
+
+  .nav-item > a:hover::after {
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    width: 30%;
     content: " ";
     height: 2px;
     pointer-events: none;
-    color: rgb(0, 180, 255);
-    border-bottom: 5px solid rgb(0, 180, 255);
-    }
-
+    color: var(--color-blue);
+    border-bottom: 5px solid var(--color-accent1);
+  }
 }
