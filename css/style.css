@@ -62,9 +62,6 @@ border: none;
   font-size: var(--icon-size);
 }
 
-.servicesboxes {
-  border: solid .2px rgb(188, 193, 207, 0.1);
-}
 
 .copyright {
   font-family: Arial,
@@ -245,5 +242,10 @@ border: none;
     pointer-events: none;
     color: var(--color-blue);
     border-bottom: 5px solid var(--color-accent1);
+  }
+
+  .about-me, .services, .my-skills, .footer-section, hr {
+    margin-left: 100px;
+    margin-right: 100px;
   }
 }
