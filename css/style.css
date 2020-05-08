@@ -4,7 +4,9 @@
   --color-accent2: rgb(79, 93, 117);
   --color-text-color: rgb(188, 193, 207);
   --main-bg-color: rgb(37, 39, 49);
-  --font-text-article: 2em;
+  --icon-size: 4em;
+  --font-text-headers: 1.8em;
+  --font-text-article: 1.5em;
 }
 
 html {
@@ -43,11 +45,25 @@ border: none;
 
 .navbar {
   background-color: var(--main-bg-color) !important;
-
+  font-size: var(--font-text-headers);
 }
 
 .navlink-address, .nav-link:hover {
   color: var(--color-accent1) !important;
+}
+
+.white-font {
+  color: var(--color-white);
+  font-size: var(--font-text-headers);
+}
+
+.fas {
+  color: var(--color-accent1);
+  font-size: var(--icon-size);
+}
+
+.servicesboxes {
+  border: solid .2px rgb(188, 193, 207, 0.1);
 }
 
 .copyright {
@@ -55,18 +71,6 @@ border: none;
        "Helvetica Neue",
        Helvetica,
        sans-serif;
-}
-
-.white-font {
-  color: var(--color-white);
-}
-
-.fas {
-  color: var(--color-accent1);
-}
-
-.servicesboxes {
-  border: solid .2px rgb(188, 193, 207, 0.1);
 }
 
 /* Mobile */
