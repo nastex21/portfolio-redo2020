@@ -57,6 +57,14 @@ border: none;
        sans-serif;
 }
 
+.white-font {
+  color: var(--color-white);
+}
+
+.fas {
+  color: var(--color-accent1);
+}
+
 /* Mobile */
 @media only screen and (max-width: 767.999px) {
   .left-container {
@@ -74,7 +82,7 @@ border: none;
     position: relative;
   }
 
-  #nav-bar {
+  #navbarIndex {
     display: none;
   }
 
@@ -131,7 +139,13 @@ border: none;
     right: 35px;
     font-size: 40px;
   }
+
+  .servicesboxes {
+    min-width: 100%;
+  }
+  
 }
+
 
 /* Desktop */
 @media only screen and (min-width: 768px) {
@@ -161,6 +175,7 @@ border: none;
   .right-container {
     height: 100%;
   }
+
 
   /* Nav bar */
 

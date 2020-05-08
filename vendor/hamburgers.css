@@ -5,6 +5,10 @@
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
+
+ :root {
+  --color-accent1: rgb(239, 131, 84);
+}
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
@@ -26,7 +30,7 @@
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
-    background-color: rgb(0,180,255) }
+    background-color: var(--color-accent1) }
 
 .hamburger-box {
   width: 40px;
@@ -41,7 +45,7 @@
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: rgb(0,180,255);
+    background-color: var(--color-accent1);
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
