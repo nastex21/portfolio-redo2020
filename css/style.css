@@ -37,7 +37,7 @@ p, footer {
 
 hr {
 height: 1px;
-background-color: var(--color-accent2);
+background-color: rgb(188, 193, 207, 0.1);
 border: none;
 }
 
@@ -63,6 +63,10 @@ border: none;
 
 .fas {
   color: var(--color-accent1);
+}
+
+.servicesboxes {
+  border: solid .2px rgb(188, 193, 207, 0.1);
 }
 
 /* Mobile */
@@ -174,6 +178,7 @@ border: none;
 
   .right-container {
     height: 100%;
+    overflow-y: auto;
   }
 
 
