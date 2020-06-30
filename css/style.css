@@ -236,6 +236,10 @@ img.zoom {
     width: 100%;
   }
 
+  .navbar-expand-md, .navbar-nav, .nav-link {
+    padding: 0 !important;
+  }
+
   .image-left {
     height: 100%;
     width: 100%;
@@ -315,8 +319,8 @@ img.zoom {
   .active > a::after {
     position: absolute;
     bottom: 0;
-    left: 35%;
-    width: 30%;
+    left: 32%;
+    width: 2.5em;
     content: " ";
     color: var(--color-blue);
     border-bottom: 5px solid var(--color-accent1);
@@ -325,8 +329,8 @@ img.zoom {
   .nav-item > a:hover::after {
     position: absolute;
     bottom: 0;
-    left: 35%;
-    width: 30%;
+    left: 32%;
+    width: 2.5em;
     content: " ";
     height: 2px;
     pointer-events: none;
