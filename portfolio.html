@@ -8,7 +8,6 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/vendor/hamburgers.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="/css/style.css">
     <title>Tony Salazar</title>
 </head>
@@ -65,68 +64,51 @@
                         </div>
                     </nav>
                 </div>
-                <section class="projects mr-5 mb-5">
+                <section>
                     <h4>Stuff I've done</h4>
                     <h1>Portfolio</h1>
                 </section>
                 <!-- Page Content -->
-                <div class="container page-top">
-                    <div class="row">
-                        <div class="col-6 col-sm-6 img-thumb">
-                            <a href="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                                class="fancybox" rel="ligthbox">
-                                <img src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                                    class="zoom img-fluid " alt="">
-                            </a>
+                <div class="page-top">
+                    <div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
+                        <div class="col-12 col-sm-6 col-lg-3 pt-5 img-thumb">
+                            <img src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                                class="w-100" alt="" data-target="#carouselExample" data-slide-to="0">
                         </div>
-                        <div class="col-6 col-sm-6 img-thumb">
-                            <a href="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                                class="fancybox" rel="ligthbox">
-                                <img src="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                                    class="zoom img-fluid" alt="">
-                            </a>
+                        <div class="col-12 col-sm-6 col-lg-3 pt-5 img-thumb">
+                            <img src="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                                class="w-100" alt="" data-target="#carouselExample" data-slide-to="1">
+
                         </div>
-                        <div class="col-6 img-thumb">
-                            <a href="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                class="fancybox" rel="ligthbox">
-                                <img src="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                    class="zoom img-fluid " alt="">
-                            </a>
+                        <div class="col-12 col-sm-6 col-lg-3 pt-5 img-thumb">
+                            <img src="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="w-100" alt="" data-target="#carouselExample" data-slide-to="2">
+
                         </div>
-                        <div class="col-6 img-thumb">
-                            <a href="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                class="fancybox" rel="ligthbox">
-                                <img src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                    class="zoom img-fluid " alt="">
-                            </a>
+                        <div class="col-12 col-sm-6 col-lg-3 pt-5 img-thumb">
+                            <img src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="w-100" alt="" data-target="#carouselExample" data-slide-to="3">
+
                         </div>
-                        <div class="col-6 img-thumb">
-                            <a href="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                                class="fancybox" rel="ligthbox">
-                                <img src="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                                    class="zoom img-fluid " alt="">
-                            </a>
+                        <div class="col-12 col-sm-6 col-lg-3 pt-5 img-thumb">
+                            <img src="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                                class="w-100" alt="" data-target="#carouselExample" data-slide-to="4">
+
                         </div>
-                        <div class="col-6 img-thumb">
-                            <a href="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                                class="fancybox" rel="ligthbox">
-                                <img src="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                                    class="zoom img-fluid " alt="">
-                            </a>
+                        <div class="col-12 col-sm-6 col-lg-3 pt-5 img-thumb">
+                            <img src="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                                class="w-100" alt="" data-target="#carouselExample" data-slide-to="5">
+
                         </div>
-                        <div class="col-6 img-thumb">
-                            <a href="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                class="fancybox" rel="ligthbox">
-                                <img src="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                    class="zoom img-fluid " alt="">
-                            </a>
+                        <div class="col-12 col-sm-6 col-lg-3 pt-5 img-thumb">
+                            <img src="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="w-100" alt="" data-target="#carouselExample" data-slide-to="6">
+
                         </div>
-                        <div class="col-6 img-thumb">
-                            <a href="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                class="fancybox" rel="ligthbox">
-                                <img src="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                    class="zoom img-fluid " alt="">
-                            </a>
+                        <div class="col-12 col-sm-6 col-lg-3 pt-5 img-thumb">
+                            <img src="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="w-100" alt="" data-target="#carouselExample" data-slide-to="7">
+
                         </div>
                     </div>
                 </div>
@@ -140,7 +122,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="/js/index.js"></script>
 </body>
 
