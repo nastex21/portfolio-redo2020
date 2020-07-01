@@ -82,7 +82,7 @@ hr {
   overflow: hidden;
 }
 
-.thumb {
+.img-thumb {
   margin-bottom: 30px;
 }
 
@@ -134,7 +134,7 @@ img.zoom {
     position: relative;
   }
 
-  #navbarIndex {
+  #navbarIndex, .navbarDiv {
     display: none;
   }
 
