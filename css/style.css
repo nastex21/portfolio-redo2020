@@ -9,9 +9,9 @@
   --font-text-headers: 1.5rem;
   --font-text-article: 1rem;
   --font-text-bigheaders: 2.3rem;
-  --font-text-desktop-headers: 1.1vw;
-  --font-text-desktop-article: 0.85vw;
-  --font-text-desktop-bigheaders: 1.5vw;
+  --font-text-desktop-headers: 0.8vw;
+  --font-text-desktop-article: 0.75vw;
+  --font-text-desktop-bigheaders: 1.2vw;
 }
 
 html {
@@ -35,6 +35,7 @@ h3,
 .nav-link {
   color: var(--color-white) !important;
   font-size: var(--font-text-bigheaders);
+  font-weight: 600;
 }
 
 h4,
@@ -42,12 +43,31 @@ h5,
 h6 {
   color: var(--color-accent1);
   font-size: var(--font-text-headers);
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, .nav-link {
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 p,
 footer {
   color: var(--color-text-color);
   font-size: var(--font-text-article);
+}
+
+p {
+  letter-spacing: 1px;
+}
+
+footer {
+  font-weight: 700;
 }
 
 hr {
@@ -64,6 +84,7 @@ hr {
 .white-font {
   color: var(--color-white);
   font-size: var(--font-text-headers);
+  font-weight: 700;
 }
 
 .fas {
@@ -76,8 +97,6 @@ hr {
 }
 
 /* Portfolio Page */
-
-
 
 /* images in Portfolio page */
 #gallery img {
@@ -270,7 +289,6 @@ hr {
     overflow-y: auto;
   }
 
-
   /* Nav bar */
 
   nav {
@@ -331,8 +349,8 @@ hr {
   .navbar-nav {
     width: 100%;
     padding: 0;
-    display: flex;
-    justify-content: space-between;
+    /*     display: flex;
+    justify-content: space-between; */
     list-style-type: none;
   }
 
@@ -346,6 +364,10 @@ hr {
 
   .nav-item:hover {
     border-bottom: 5px solid var(--color-accent1);
+  }
+
+  .nav-item {
+    margin: 50px;
   }
 
   /* navbar end */
