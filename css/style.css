@@ -9,8 +9,8 @@
   --font-text-headers: 1.5rem;
   --font-text-article: 1rem;
   --font-text-bigheaders: 2.3rem;
-  --font-text-desktop-headers: 0.8vw;
-  --font-text-desktop-article: 0.75vw;
+  --font-text-desktop-headers: 0.6vw;
+  --font-text-desktop-article: 0.7vw;
   --font-text-desktop-bigheaders: 1.2vw;
 }
 
@@ -33,6 +33,7 @@ h1,
 h2,
 h3,
 .nav-link {
+  font-family: 'Oxygen', sans-serif;
   color: var(--color-white) !important;
   font-size: var(--font-text-bigheaders);
   font-weight: 600;
@@ -41,6 +42,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: 'Oxygen', sans-serif;
   color: var(--color-accent1);
   font-size: var(--font-text-headers);
   font-weight: 700;
