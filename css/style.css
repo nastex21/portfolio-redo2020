@@ -103,7 +103,8 @@ hr {
 
 /* HP > Services */
 .cardInfo {
-  background-color: rgb(24, 23, 23);
+ /*  background-color: rgb(24, 23, 23); */
+  background-color: rgb(44, 43, 43);
   border-radius: 5px;
   box-shadow: 5px 10px 18px #1b1b1b;
 }
