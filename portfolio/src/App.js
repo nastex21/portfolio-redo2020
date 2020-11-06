@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import useWindowSize from './util/WindowSize';
 
 function App() {
-  useEffect() {
+  const size = useWindowSize();
 
-  }
-  
   return (
     <div className="App">
-
+      {size.width}px / {size.height}px
+      {size.width < 768 ? <p>Mobile</p> : <p>Desktop</p>} 
     </div>
   );
 }
