@@ -1,13 +1,15 @@
 import React from "react";
 import useWindowSize from './util/WindowSize';
+import MobileDesign from './Components/MobileDesign';
+import DesktopDesign from './Components/DesktopDesign';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const size = useWindowSize();
 
   return (
     <div className="App">
-      {size.width}px / {size.height}px
-      {size.width < 768 ? <p>Mobile</p> : <p>Desktop</p>} 
+      {size.width < 768 ? <MobileDesign /> : <DesktopDesign />} 
     </div>
   );
 }
