@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-redo2020",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nastex21/portfolio-redo2020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nastex21/portfolio-redo2020/issues"
+  },
+  "homepage": "https://github.com/nastex21/portfolio-redo2020#readme"
+}

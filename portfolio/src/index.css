@@ -1,0 +1,44 @@
+:root {
+    --color-white: rgb(255, 255, 255);
+    --color-accent1: rgb(255, 158, 116);
+    --color-accent2: rgb(79, 93, 117);
+    --color-text-color: rgb(188, 193, 207);
+    --main-bg-color: rgb(41, 41, 41);
+    --icon-size: 1.5rem;
+    --icon-size-desktop: 1.5vw;
+    --font-text-headers: 1.5rem;
+    --font-text-article: 1rem;
+    --font-text-bigheaders: 2.3rem;
+    --font-text-desktop-headers: 0.6vw;
+    --font-text-desktop-article: 0.7vw;
+    --font-text-desktop-bigheaders: 1.2vw;
+  }  
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--color-white);
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+  .overlay-content,
+  .hamburger {
+    display: none;
+  }
+
+  .image-left {
+    height: 100vh;
+  }
+}
