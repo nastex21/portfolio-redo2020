@@ -1,5 +1,49 @@
+body {
+    overflow-y: hidden;
+}
+
 .left-container {
     width: 50vw;
+}
+
+.homeDiv {
+    grid-area: home;
+}
+
+.servicesDiv {
+    grid-area: services;
+}
+
+.skillsDiv {
+    grid-area: skills;
+}
+
+.portfolioDiv {
+    grid-area: portfolio;
+}
+
+.contactDiv {
+    grid-area: contact;
+}
+
+.right-container {
+    width: 50vw;
+    float: right;
+    height: 100vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    display: grid;
+    grid-template-columns: 50vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "home services skills portfolio contact "
+}
+
+.right-container section {
+    width: 50vw;
+    height: 100vh;
+    scroll-snap-align: start;
 }
 
 .myPic {
