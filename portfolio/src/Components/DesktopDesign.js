@@ -21,12 +21,14 @@ function DesktopDesign() {
                         </picture>
                     </div>
                     <div className="right-container">
-                            <NavBarItems />
+                        <NavBarItems />
+                        <div className="contentDiv">
                             <Home />
                             <Services />
                             <Skills />
                             <Portfolio />
                             <Contact />
+                        </div>
                     </div>
                 </Row>
             </Container>
