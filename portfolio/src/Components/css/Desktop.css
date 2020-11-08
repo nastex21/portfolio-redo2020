@@ -2,9 +2,10 @@ body {
     overflow-y: hidden;
 }
 
-.left-container {
-    width: 50vw;
-}
+.active {
+    color: lime; 
+    font-weight: 600;
+  }
 
 .navbarDiv {
     grid-area: navbar;
@@ -65,3 +66,11 @@ body {
 .myPic {
     height: 100vh;
 }
+
+@media screen and (max-width: 1200px) {
+    picture > img {
+        height: 100vh !important;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+  }
