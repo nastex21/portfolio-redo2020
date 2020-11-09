@@ -1,8 +1,8 @@
-import React from "react";
+import React, {forwardRef} from "react";
 
-function Services() {
+const Services = forwardRef((props, ref) => {
   return (
-    <section id="services" className="servicesDiv">
+    <section ref={ref} id="services" className="servicesDiv">
       <h1>Services</h1>
       <div className="row mt-5">
         <div id="servivcebox1" className=" col-md-5 mb-5 servicesboxes">
@@ -82,6 +82,6 @@ function Services() {
       </div>
     </section>
   );
-}
+});
 
 export default Services;

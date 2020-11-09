@@ -1,8 +1,8 @@
-import React from "react";
+import React, {forwardRef} from "react";
 
-function Home() {
+const Home = forwardRef((props, ref) => {
   return (
-      <section id="home" className="homeDiv about-me mb-5">
+      <section ref={ref} id="home" className="homeDiv about-me mb-5">
         <h4 id="title-name">Software Engineer</h4>
         <h1>Tony Salazar</h1>
         <p>
@@ -16,6 +16,6 @@ function Home() {
         </p>
       </section>
   );
-}
+});
 
 export default Home;

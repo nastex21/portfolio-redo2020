@@ -1,12 +1,12 @@
-import React from 'react';
+import React, {forwardRef} from 'react';
 
-function Portfolio() {
+const Portfolio = forwardRef((props, ref) => {
 
     return (
-        <section id="portfolio" className="portfolioDiv">
+        <section ref={ref} id="portfolio" className="portfolioDiv">
             <p>Portfolio</p>
         </section>
     )
-}
+});
 
 export default Portfolio;
