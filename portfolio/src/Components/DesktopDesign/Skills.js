@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-function Skills() {
+const Skills = ({ ...props }) => {
+  console.log(props);
+  const [state, setState] = useState("");
+
+/*   useEffect(() => {
+    console.log(state);
+    console.log(ref.current);
+    ref.current = state;
+  }, [state]); */
+
   return (
     <section id="skills" className="skillsDiv my-skills mr-5 mt-4 mb-5">
       <h1>What I Know</h1>
@@ -29,17 +38,19 @@ function Skills() {
         <li>redux</li>
         <li>python</li>
       </ul>
-      <p>Create functional websites and apps using HTML, CSS, and JavaScript Have
-      knowledge of JavaScript libraries like React & Redux, d3.js Use CSS
-      preprocessor languages such as Stylus Dabble with front-end component
-      libraries like Bootstrap Use node.js for compilation of projects and
-      back-end work Deployment of websites Avid user and contributor to Git Hub
-      Worked with APIs such as Google Maps, Wikipedia, Twitch, OpenWeatherMap,
-      etc Experienced with macOS and Linux, and their terminals Self-motivated
-      individual that’s not afraid of learning new programming languages or
-      frameworks. </p>
+      <p>
+        Create functional websites and apps using HTML, CSS, and JavaScript Have
+        knowledge of JavaScript libraries like React & Redux, d3.js Use CSS
+        preprocessor languages such as Stylus Dabble with front-end component
+        libraries like Bootstrap Use node.js for compilation of projects and
+        back-end work Deployment of websites Avid user and contributor to Git
+        Hub Worked with APIs such as Google Maps, Wikipedia, Twitch,
+        OpenWeatherMap, etc Experienced with macOS and Linux, and their
+        terminals Self-motivated individual that’s not afraid of learning new
+        programming languages or frameworks.{" "}
+      </p>
     </section>
   );
-}
+};
 
-export default Skills;
+export default React.memo(Skills);
