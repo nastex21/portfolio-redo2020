@@ -1,4 +1,4 @@
-import React, { useEffect, useImperativeHandle, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Home from "./DesktopDesign/Home";
@@ -10,28 +10,49 @@ import Contact from "./DesktopDesign/Contact";
 import Footer from './DesktopDesign/Footer';
 import "./css/Desktop.css";
 
-function DesktopDesign (props, ref) {
+const getDimensions = ele => {
+    const { height } = ele.getBoundingClientRect();
+    const offsetTop = ele.offsetTop;
+    const offsetBottom = offsetTop + height;
 
-    const inputRef = useRef();
+    return {
+        height,
+        offsetTop,
+        offsetBottom,
+    };
+};
 
-     useImperativeHandle(ref, () => {
-            const handleScroll = (e) => {
-                if (window.scrollY >= 0 && window.scrollY <= window.innerHeight / 2) {
-                    console.log("first if");
-                    // Set states for nav items here if the user is on the first section
-                } else if (inputRef.current.offsetTop - window.scrollY < window.innerHeight / 2 && inputRef.current.offsetTop - window.scrollY >= window.innerHeight / 2) {
-                    // For the about section
-                    console.log("else if");
-                } else {
-                    // Etc...
-                    console.log("else");
-                }
-            }
-            document.addEventListener('scroll', handleScroll);
-            return () => {
-                document.removeEventListener('scroll', handleScroll);
-            }
+function DesktopDesign() {
+    const [visibleSection, setVisibleSection] = useState();
+    const headerRef = useRef(null);
+    const homeRef = useRef(null);
+    const skillsRef = useRef(null);
+    const servicesRef = useRef(null);
+    const portfolioRef = useRef(null);
+    const contactRef = useRef(null);
+    const sectionRefs = [
+        { section: "home", ref: homeRef },
+        { section: "skills", ref: skillsRef },
+        { section: "services", ref: servicesRef },
+        { section: "portfolio", ref: portfolioRef },
+        { section: "contact", ref: contactRef }
+    ];
+    const scrollTo = ele => {
+        ele.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
         });
+    };
+    
+
+    useEffect(() => {
+        const handleScroll = () => { };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
         <>
@@ -45,11 +66,11 @@ function DesktopDesign (props, ref) {
                     <div className="right-container">
                         <NavBarItems />
                         <div className="contentDiv">
-                            <Home {...props} />
-                            <Services {...props} />
-                            <Skills {...props} />
-                            <Portfolio {...props} />
-                            <Contact {...props} />
+                            <Home ref={homeRef} />
+                            <Services ref={servicesRef} />
+                            <Skills ref={skillsRef} />
+                            <Portfolio ref={portfolioRef} />
+                            <Contact ref={contactRef} />
                         </div>
                     </div>
                 </Row>
