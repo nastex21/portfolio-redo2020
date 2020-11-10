@@ -16,19 +16,15 @@ const getDimensions = (ele) => {
   if (!ele) return;
   console.log("ele");
   console.log(ele);
-  const { height } = ele.getBoundingClientRect();
   console.log(ele.getBoundingClientRect());
-  const offsetTop = ele.offsetTop;
-  const offsetBottom = offsetTop + height;
+
 
   const offsetWidth = ele.offsetWidth;
 
   console.log(offsetWidth);
 
   return {
-    height,
-    offsetTop,
-    offsetBottom,
+
   };
 };
 
@@ -58,7 +54,7 @@ function DesktopDesign() {
   };
 
   useEffect(() => {
-    const handleScroll = (e) => {
+   /*  const handleScroll = (e) => {
       console.log(e);
       if (!headerRef.current) return;
       const { height: headerHeight } = getDimensions(headerRef.current);
@@ -82,7 +78,7 @@ function DesktopDesign() {
       } else if (!selected && visibleSection) {
         setVisibleSection(undefined);
       }
-    };
+    }; */
 
     handleScroll();
     window.addEventListener("keydown", handleScroll);
