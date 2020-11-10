@@ -58,9 +58,8 @@ function DesktopDesign() {
   };
 
   useEffect(() => {
-    const handleScroll = () => {
-      console.log("hi1");
-      console.log(headerRef);
+    const handleScroll = (e) => {
+      console.log(e);
       if (!headerRef.current) return;
       const { height: headerHeight } = getDimensions(headerRef.current);
       const scrollPosition = window.scrollX;
@@ -69,7 +68,9 @@ function DesktopDesign() {
 
       const selected = sectionRefs.find(({ section, ref }) => {
         console.log(ref);
+        console.log(section);
         const ele = ref.current;
+        console.log(ele);
         if (ele) {
           const { offsetBottom, offsetTop } = getDimensions(ele);
           return scrollPosition > offsetTop && scrollPosition < offsetBottom;
@@ -90,6 +91,7 @@ function DesktopDesign() {
     };
   }, [visibleSection]);
 
+
   return (
     <>
       <Container fluid className="px-0">
@@ -107,7 +109,7 @@ function DesktopDesign() {
                     <Nav.Link
                       href="/home"
                       className={`header_link ${
-                        visibleSection === "Leadership" ? "selected" : ""
+                        visibleSection === "Home" ? "selected" : ""
                       }`}
                       onClick={() => {
                         scrollTo(homeRef.current);
@@ -119,7 +121,7 @@ function DesktopDesign() {
                     <Nav.Link
                       href="#services"
                       className={`header_link ${
-                        visibleSection === "Leadership" ? "selected" : ""
+                        visibleSection === "Services" ? "selected" : ""
                       }`}
                       onClick={() => {
                         scrollTo(servicesRef.current)
@@ -131,7 +133,7 @@ function DesktopDesign() {
                     <Nav.Link
                       href="#skills"
                       className={`header_link ${
-                        visibleSection === "Leadership" ? "selected" : ""
+                        visibleSection === "Skills" ? "selected" : ""
                       }`}
                       onClick={() => {
                         scrollTo(skillsRef.current) 
@@ -143,7 +145,7 @@ function DesktopDesign() {
                     <Nav.Link
                       href="#portfolio"
                       className={`header_link ${
-                        visibleSection === "Leadership" ? "selected" : ""
+                        visibleSection === "Portfolio" ? "selected" : ""
                       }`}
                       onClick={() => {
                         scrollTo(portfolioRef.current);
@@ -155,7 +157,7 @@ function DesktopDesign() {
                     <Nav.Link
                       href="#contact"
                       className={`header_link ${
-                        visibleSection === "Leadership" ? "selected" : ""
+                        visibleSection === "Contact" ? "selected" : ""
                       }`}
                       onClick={() => {
                         scrollTo(contactRef.current);

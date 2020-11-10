@@ -2,7 +2,7 @@ import React, { useState, forwardRef } from "react";
 
 const Skills = forwardRef((props, ref) => {
   return (
-    <section ref={ref} id="skills" className="skillsDiv my-skills mr-5 mt-4 mb-5">
+    <section ref={ref} id="Skills" className="skillsDiv">
       <h1>What I Know</h1>
       <p>Front End</p>
       <ul>

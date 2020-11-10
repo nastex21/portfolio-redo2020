@@ -2,7 +2,7 @@ import React, {forwardRef} from "react";
 
 const Home = forwardRef((props, ref) => {
   return (
-      <section ref={ref} id="home" className="homeDiv about-me mb-5">
+      <section ref={ref} id="Home" className="homeDiv about-me">
         <h4 id="title-name">Software Engineer</h4>
         <h1>Tony Salazar</h1>
         <p>

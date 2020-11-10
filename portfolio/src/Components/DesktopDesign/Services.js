@@ -2,7 +2,7 @@ import React, {forwardRef} from "react";
 
 const Services = forwardRef((props, ref) => {
   return (
-    <section ref={ref} id="services" className="servicesDiv">
+    <section ref={ref} id="Services" className="servicesDiv">
       <h1>Services</h1>
       <div className="row mt-5">
         <div id="servivcebox1" className=" col-md-5 mb-5 servicesboxes">
