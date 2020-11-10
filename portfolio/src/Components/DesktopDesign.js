@@ -11,7 +11,6 @@ import Footer from "./DesktopDesign/Footer";
 import "./css/Desktop.css";
 
 function DesktopDesign() {
-
   return (
     <>
       <Container fluid className="px-0">
@@ -23,11 +22,11 @@ function DesktopDesign() {
           </div>
           <div className="right-container">
             <div className="navbarDiv mb-5" id="navbarIndex">
-              <NavBarItems />
+                <NavBarItems />
             </div>
-            <div className="contentDiv">
+            <div className="contentDiv" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
               <Home />
-              <Services />      
+              <Services />
               <Skills />
               <Portfolio />
               <Contact />
