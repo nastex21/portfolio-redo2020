@@ -4,6 +4,65 @@ body {
   overflow: hidden;
 }
 
+.nav {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  background: #fff;
+  overflow: auto;
+  white-space: nowrap;
+
+  @media (min-width: 480px) {
+    flex-direction: row;
+  }
+
+  &__title {
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  &__inner {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    list-style-type: none;
+    border-bottom: 2px solid #fff;
+  }
+
+  &__item--inverse {
+    background: linear-gradient(45deg, #5500f0, #3f5bff);
+    border-bottom: 2px solid #5500f0;
+  }
+
+  &__item--active {
+    font-weight: 700;
+    border-bottom: 2px solid #5500f0;
+  }
+
+  &__link {
+    display: flex;
+    padding: 1rem;
+    color: #5500f0;
+    text-decoration: none;
+    transition: background 0.3s ease-in;
+
+    &:hover {
+      background: #5500f0;
+      color: #fff;
+    }
+  }
+
+  &__item--inverse &__link {
+    color: #fff;
+  }
+}
+
 .active {
   color: lime;
   font-weight: 600;
