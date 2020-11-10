@@ -1,6 +1,7 @@
-body {
-    overflow-y: hidden;
-}
+html, body {
+    height: 100vh;
+    overflow: hidden;
+  }
 
 .active {
     color: lime; 
