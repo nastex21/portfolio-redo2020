@@ -4,62 +4,27 @@ body {
   overflow: hidden;
 }
 
-body {
-  position: relative; 
-}
-
-.navbarDiv {
-  grid-area: navbar;
-}
-
-.homeDiv {
-  grid-area: home;
-}
-
-.servicesDiv {
-  grid-area: services;
-}
-
-.skillsDiv {
-  grid-area: skills;
-}
-
-.portfolioDiv {
-  grid-area: portfolio;
-}
-
-.contactDiv {
-  grid-area: contact;
-}
-
-.right-container {
-  width: 50vw;
-  float: right;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  display: grid;
-  grid-template-columns: 50vw;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "navbar navbar navbar navbar navbar"
-    "home services skills portfolio contact ";
-}
-
 .contentDiv {
   width: 100%;
   height: 100vh;
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  grid-template-areas: "home services skills portfolio contact ";
+}
+
+.content-group > .row {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.content-group > .row > .col {
+  display: inline-block;
 }
 
 .right-container section {
-  width: 50vw;
   height: 100vh;
+  overflow-x: hidden;
   overflow-y: scroll;
   scroll-snap-align: start;
 }
