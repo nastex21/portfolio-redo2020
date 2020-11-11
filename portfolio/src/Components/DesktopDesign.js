@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
+import { Waypoint } from 'react-waypoint';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Home from "./DesktopDesign/Home";
@@ -11,6 +12,11 @@ import Footer from "./DesktopDesign/Footer";
 import "./css/Desktop.css";
 
 function DesktopDesign() {
+
+  function handleEnter() {
+    console.log('entered');
+  }
+
   return (
     <>
       <Container fluid className="px-0">
@@ -24,12 +30,14 @@ function DesktopDesign() {
             <div className="navbarDiv mb-5" id="navbarIndex">
                 <NavBarItems />
             </div>
-            <div className="contentDiv" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+            <div className="contentDiv">
+            <Waypoint onEnter={handleEnter} >
               <Home />
               <Services />
               <Skills />
               <Portfolio />
               <Contact />
+            </Waypoint>
             </div>
           </div>
         </Row>
