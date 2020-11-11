@@ -1,16 +1,8 @@
-import React, {forwardRef} from "react";
-import { Waypoint } from 'react-waypoint';
+import React from "react";
 
-
-const Home = forwardRef((props, ref) => {
-
-  function homeEnter() {
-    console.log('home')
-  }
-
+function Home() {
   return (
-    <Waypoint onEnter={homeEnter}>
-      <section ref={ref} id="Home" className="homeDiv about-me">
+      <section id="Home" className="homeDiv about-me">
         <h4 id="title-name">Software Engineer</h4>
         <h1>Tony Salazar</h1>
         <p>
@@ -23,8 +15,7 @@ const Home = forwardRef((props, ref) => {
           and the things I can do!{" "}
         </p>
       </section>
-      </Waypoint>
   );
-});
+}
 
 export default Home;

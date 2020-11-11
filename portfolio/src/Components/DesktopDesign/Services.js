@@ -1,15 +1,8 @@
 import React from "react";
-import { Waypoint } from 'react-waypoint';
 
-const Services = () => {
-
-    function enterService() {
-      console.log('service Entered')
-    } 
-
+function Services () {
 
     return (
-    <Waypoint onEnter={enterService}>
       <section id="Services" className="servicesDiv">
         <h1>Services</h1>
         <div className="row mt-5">
@@ -89,7 +82,6 @@ const Services = () => {
           </div>
         </div>
       </section>
-    </Waypoint>
   );
 };
 

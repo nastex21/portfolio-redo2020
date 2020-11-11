@@ -1,7 +1,8 @@
 import React from "react";
+import { Waypoint } from "react-waypoint";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from 'react-bootstrap/Col';
+import Col from "react-bootstrap/Col";
 import Home from "./DesktopDesign/Home";
 import NavBarItems from "./DesktopDesign/NavBarItems";
 import Services from "./DesktopDesign/Services";
@@ -12,13 +13,12 @@ import Footer from "./DesktopDesign/Footer";
 import "./css/Desktop.css";
 
 function DesktopDesign() {
-
-  function handleEnter() {
-    console.log('entered');
+  function hasEntered() {
+    console.log("entered");
   }
 
   function handleService() {
-    console.log('service');
+    console.log("service");
   }
 
   return (
@@ -39,20 +39,40 @@ function DesktopDesign() {
               </div>
               <div className="contentDiv content-group">
                 <Row>
-                  <Col >
-                    <Home />
+                  <Col>
+                    <Waypoint onEnter={hasEntered} horizontal={true}>
+                      <div>
+                        <Home />
+                      </div>
+                    </Waypoint>
                   </Col>
-                  <Col >
-                    <Services />
+                  <Col>
+                  <Waypoint onEnter={hasEntered} horizontal={true}>
+                      <div>
+                        <Services />
+                      </div>
+                    </Waypoint>
                   </Col>
-                  <Col >
-                    <Skills />
+                  <Col>
+                  <Waypoint onEnter={hasEntered} horizontal={true}>
+                      <div>
+                        <Skills />
+                      </div>
+                    </Waypoint>
                   </Col>
-                  <Col >
-                    <Portfolio />
+                  <Col>
+                  <Waypoint onEnter={hasEntered} horizontal={true}>
+                      <div>
+                        <Portfolio />
+                      </div>
+                    </Waypoint>
                   </Col>
-                  <Col >
-                    <Contact />
+                  <Col>
+                  <Waypoint onEnter={hasEntered} horizontal={true}>
+                      <div>
+                        <Contact />
+                      </div>
+                    </Waypoint>
                   </Col>
                 </Row>
               </div>

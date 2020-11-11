@@ -1,8 +1,8 @@
-import React, { useState, forwardRef } from "react";
+import React from "react";
 
-const Skills = forwardRef((props, ref) => {
+function Skills () {
   return (
-    <section ref={ref} id="Skills" className="skillsDiv">
+    <section id="Skills" className="skillsDiv">
       <h1>What I Know</h1>
       <p>Front End</p>
       <ul>
@@ -42,6 +42,6 @@ const Skills = forwardRef((props, ref) => {
       </p>
     </section>
   );
-});
+};
 
-export default React.memo(Skills);
+export default Skills;
