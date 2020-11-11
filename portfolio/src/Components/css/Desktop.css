@@ -70,7 +70,6 @@ body {
 
 .is-active {
   background-color: red;
-
 }
 
 @media screen and (max-width: 1200px) {

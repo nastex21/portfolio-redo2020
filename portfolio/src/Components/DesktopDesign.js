@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Waypoint } from "react-waypoint";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -13,14 +13,17 @@ import Footer from "./DesktopDesign/Footer";
 import "./css/Desktop.css";
 
 function DesktopDesign() {
-  function hasEntered() {
-    console.log("entered");
+  const [active, setActive] = useState('');
+  const [remove, setRemove] = useState('');
+  
+  function hasEntered(divName) {
+    setActive(divName);
   }
 
-  function handleService() {
-    console.log("service");
+  function hasLeft(divName) {
+    setRemove(divName);
   }
-
+ 
   return (
     <>
       <Container fluid className="px-0">
@@ -35,40 +38,40 @@ function DesktopDesign() {
           <Col className="col-6">
             <div className="right-container">
               <div className="navbarDiv mb-5" id="navbarIndex">
-                <NavBarItems />
+                <NavBarItems activeClass={active} removeClass={remove} />
               </div>
               <div className="contentDiv content-group">
                 <Row>
                   <Col>
-                    <Waypoint onEnter={hasEntered} horizontal={true}>
-                      <div>
+                    <Waypoint onEnter={() => hasEntered('home')} onLeave={() => hasLeft('home')} horizontal={true}>
+                      <div className="homeDiv">
                         <Home />
                       </div>
                     </Waypoint>
                   </Col>
                   <Col>
-                  <Waypoint onEnter={hasEntered} horizontal={true}>
+                  <Waypoint onEnter={() => hasEntered('services')} onLeave={() => hasLeft('services')} horizontal={true}>
                       <div>
                         <Services />
                       </div>
                     </Waypoint>
                   </Col>
                   <Col>
-                  <Waypoint onEnter={hasEntered} horizontal={true}>
+                  <Waypoint onEnter={() => hasEntered('skills')} onLeave={() => hasLeft('skills')} horizontal={true}>
                       <div>
                         <Skills />
                       </div>
                     </Waypoint>
                   </Col>
                   <Col>
-                  <Waypoint onEnter={hasEntered} horizontal={true}>
+                  <Waypoint onEnter={() => hasEntered('portfolio')} onLeave={() => hasLeft('portfolio')} horizontal={true}>
                       <div>
                         <Portfolio />
                       </div>
                     </Waypoint>
                   </Col>
                   <Col>
-                  <Waypoint onEnter={hasEntered} horizontal={true}>
+                  <Waypoint onEnter={() => hasEntered('contact')} onLeave={() => hasLeft('contact')} horizontal={true}>
                       <div>
                         <Contact />
                       </div>
