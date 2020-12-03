@@ -27,21 +27,19 @@ function DesktopDesign() {
   return (
     <>
       <Container fluid className="px-0">
-        <Row>
-          <Col className="col-6">
+        <Row className="no-gutters"> 
+          <Col className="col-5">
             <div className="left-container p-0 m-0">
-              <picture>
-                <img className="myPic" src="/images/IMG-3210.jpg" alt="Me" />
-              </picture>
+                <img className="img-fluid" src="/images/IMG-3210.jpg" alt="Me" />
             </div>
           </Col>
-          <Col className="col-6">
+          <Col className="col-7">
             <div className="right-container">
               <div className="navbarDiv mb-5" id="navbarIndex">
                 <NavBarItems activeClass={active} removeClass={remove} />
               </div>
               <div className="contentDiv content-group">
-                <Row>
+                <Row className="no-gutters">
                   <Col>
                     <Waypoint onEnter={() => hasEntered('home')} onLeave={() => hasLeft('home')} horizontal={true}>
                       <div className="homeDiv">
