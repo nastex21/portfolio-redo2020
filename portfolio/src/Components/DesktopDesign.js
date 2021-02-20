@@ -38,7 +38,7 @@ function DesktopDesign() {
             <div className="navbarDiv mb-5" id="navbarIndex">
                 <NavBarItems activeClass={active} removeClass={remove} />
               </div>
-              <div className="contentDiv content-group">
+              <div className="mainContentDiv content-group">
                 <Row>
                   <Col>
                     <Waypoint onEnter={() => hasEntered('home')} onLeave={() => hasLeft('home')} horizontal={true}>

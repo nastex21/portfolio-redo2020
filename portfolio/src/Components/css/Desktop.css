@@ -4,7 +4,7 @@ body {
   overflow: hidden;
 }
 
-.contentDiv {
+.mainContentDiv {
   width: 100%;
   height: 100vh;
   overflow-x: scroll;
@@ -18,6 +18,12 @@ body {
   white-space: nowrap;
 }
 
+
+/* So the woring will wrap because it doesn't wrap by default */
+.contentDiv > p, .service-articles > p {
+  white-space: pre-line !important;
+}
+
 .content-group > .row > .col {
   display: inline-block;
 }
@@ -25,8 +31,11 @@ body {
 .right-container section {
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: scroll;
   scroll-snap-align: start;
+}
+
+.contentDiv {
+  overflow-y: hidden;
 }
 
 .myPic {

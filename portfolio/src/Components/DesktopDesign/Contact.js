@@ -3,7 +3,7 @@ import React from 'react';
 function Contact() {
 
     return (
-        <section id="Contact" className="contactDiv">
+        <section id="Contact" className="contentDiv">
             <p>Contact</p>
         </section>
     )
