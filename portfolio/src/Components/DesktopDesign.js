@@ -27,7 +27,7 @@ function DesktopDesign() {
   return (
     <>
       <Container fluid className="px-0">
-        <Row className="no-gutters"> 
+        <Row className="no-gutters">
           <Col className="col-5">
             <div className="left-container p-0 m-0">
                 <img className="img-fluid" src="/images/IMG-3210.jpg" alt="Me" />
@@ -35,7 +35,7 @@ function DesktopDesign() {
           </Col>
           <Col className="col-7">
             <div className="right-container">
-              <div className="navbarDiv mb-5" id="navbarIndex">
+            <div className="navbarDiv mb-5" id="navbarIndex">
                 <NavBarItems activeClass={active} removeClass={remove} />
               </div>
               <div className="contentDiv content-group">

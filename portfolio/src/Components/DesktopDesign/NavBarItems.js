@@ -8,7 +8,7 @@ function NavBarItems({activeClass}) {
 
   return (
     <div className="navbarDiv mb-5" id="navbarIndex">
-      <Navbar id="navbar-example2" fixed="top">
+      <Navbar id="navbar-example2">
         <Nav>
           <Nav.Item>
             <Nav.Link className={activeClass == 'home' ? 'is-active' : null} href="/">Home</Nav.Link>
