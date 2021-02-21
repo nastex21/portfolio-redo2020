@@ -34,13 +34,13 @@ function DesktopDesign() {
             </div>
           </Col>
           <Col className="col-7">
-            <div className="right-container">
-            <div className="navbarDiv mb-5" id="navbarIndex">
+          <div className="navbarDiv" id="navbarIndex">
                 <NavBarItems activeClass={active} removeClass={remove} />
               </div>
+            <div className="right-container">
               <div className="mainContentDiv content-group">
                 <Row>
-                  <Col>
+                  <Col id="Home">
                     <Waypoint onEnter={() => hasEntered('home')} onLeave={() => hasLeft('home')} horizontal={true}>
                       <div className="homeDiv">
                         <Home />
