@@ -11,7 +11,7 @@ function NavBarItems({ activeClass }) {
             <Nav.Link className={activeClass == 'home' ? 'is-active' : null} href="#homeSec" data-scroll>Home</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className={activeClass == 'services' ? 'is-active' : null} href="#servicesSec" data-scroll>Services</Nav.Link>
+            <Nav.Link className={activeClass == 'services' ? 'is-active' : null} href="#servicesSec"  data-scroll="#second">Services</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link className={activeClass == 'skills' ? 'is-active' : null} href="#skillsSec" data-scroll>Skills</Nav.Link>

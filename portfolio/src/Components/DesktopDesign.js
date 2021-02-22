@@ -40,15 +40,7 @@ function DesktopDesign() {
   return (
     <>
       <div>
-        <header className="header" data-scroll-header>
-          <a className="header__back" href="./#examples"><i className="icon-angle-left"></i><span>Back</span></a>
-          <h1>
-            <a className="header__code" href="https://github.com/tsuyoshiwada/sweet-scroll/blob/master/docs/horizontal.html">
-              <i className="icon-code"></i>
-              <span>Source</span>
-            </a>
-          </h1>
-        </header>
+        <NavBarItems />
         </div>
         <div id="rightColumn">
           <div className="right-container">
