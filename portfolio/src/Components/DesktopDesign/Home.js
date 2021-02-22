@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() {
   return (
-      <section className="contentDiv">
+      <section id="home" className="contentDiv">
         <h4 id="title-name">Software Engineer</h4>
         <h1>Tony Salazar</h1>
         <p>
@@ -14,9 +14,6 @@ function Home() {
           taking your time visiting my page and I hope you learn more about me
           and the things I can do!{" "}
         </p>
-        <ul>
-        <li><button className="btn" data-scroll="#second">Next page</button></li>
-      </ul>
       </section>
   );
 }

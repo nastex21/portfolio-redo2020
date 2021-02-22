@@ -39,8 +39,8 @@ function DesktopDesign() {
 
   return (
     <>
-      <div>
-        <NavBarItems />
+        <div id="navbarDiv">
+          <NavBarItems />
         </div>
         <div id="rightColumn">
           <div className="right-container">

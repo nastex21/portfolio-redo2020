@@ -1,7 +1,22 @@
+html,
+body {
+  height: 100vh;
+}
+
+
+/* Create pages for slide show */
 #rightColumn > div {
   width: 500vw;
 }
 section {
   float: left;
   width: 20%;
+}
+ /* END */
+
+ #navbarDiv {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9;
 }
