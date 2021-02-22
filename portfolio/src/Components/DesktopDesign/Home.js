@@ -2,7 +2,9 @@ import React from "react";
 
 function Home() {
   return (
-      <section id="home" className="contentDiv">
+    <div id="home" className="contentDiv">
+      <img className="img-fluid" src="/images/IMG-3210.jpg" alt="Me" />
+      <section>
         <h4 id="title-name">Software Engineer</h4>
         <h1>Tony Salazar</h1>
         <p>
@@ -15,6 +17,7 @@ function Home() {
           and the things I can do!{" "}
         </p>
       </section>
+    </div>
   );
 }
 

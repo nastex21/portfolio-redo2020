@@ -1,14 +1,16 @@
 html,
-body {
+body, #root, .App {
+  width: 500vw;
+}
+
+html, body, #root, .App, #singleEntity, #leftColumn, #rightColumn{
   height: 100vh;
 }
 
 
 /* Create pages for slide show */
-#rightColumn > div {
-  width: 500vw;
-}
-section {
+
+.contentDiv {
   float: left;
   width: 20%;
 }
@@ -20,3 +22,24 @@ section {
   top: 0;
   z-index: 9;
 }
+/* end */
+
+section {
+  height: 100vh;
+}
+
+/* HOME DIV */
+  #home {
+    display: grid;
+    grid-template-areas: 
+    "image content"
+  }
+  #home > img {
+    height: 100vh;
+    grid-area: image;
+  }
+
+  #home > section {
+    height: 100vh;
+    grid-area: content;
+  }

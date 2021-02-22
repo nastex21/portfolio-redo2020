@@ -39,18 +39,14 @@ function DesktopDesign() {
 
   return (
     <>
-        <div id="navbarDiv">
-          <NavBarItems />
-        </div>
-        <div id="rightColumn">
-          <div className="right-container">
+      <div id="navbarDiv">
+        <NavBarItems />
+      </div>
             <Home />
             <Services />
             <Skills />
             <Portfolio />
             <Contact />
-          </div>
-        </div>
     </>
   );
 }
