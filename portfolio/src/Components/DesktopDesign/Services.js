@@ -3,7 +3,7 @@ import React from "react";
 function Services () {
 
     return (
-      <section id="Services" className="contentDiv">
+      <section id="second" className="contentDiv">
         <h1>Services</h1>
         <div className="row mt-5">
           <div id="servivcebox1" className=" col-md-5 mb-5 servicesboxes">

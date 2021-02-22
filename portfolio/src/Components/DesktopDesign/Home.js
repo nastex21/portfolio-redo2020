@@ -14,6 +14,9 @@ function Home() {
           taking your time visiting my page and I hope you learn more about me
           and the things I can do!{" "}
         </p>
+        <ul>
+        <li><button className="btn" data-scroll="#second">Next page</button></li>
+      </ul>
       </section>
   );
 }
