@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function Home() {
   return (
@@ -7,6 +7,9 @@ function Home() {
       <section>
         <h4 id="title-name">Software Engineer</h4>
         <h1>Tony Salazar</h1>
+        <h1>
+          <div id="typedtext"></div>
+        </h1>
         <p>
           Hello, my name is Tony and I’m a passionate software engineer! I love
           taking what are originally thoughts and ideas, putting pen to paper
