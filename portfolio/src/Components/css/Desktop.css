@@ -1,6 +1,7 @@
 html,
 body, #root, .App {
-  width: 500vw;
+  width: 600vw;
+  overflow-y: hidden;
 }
 
 html, body, #root, .App, #singleEntity, #leftColumn, #rightColumn{
@@ -12,7 +13,7 @@ html, body, #root, .App, #singleEntity, #leftColumn, #rightColumn{
 
 .contentDiv {
   float: left;
-  width: 20%;
+  width: 100vw;
 }
  /* END */
 
