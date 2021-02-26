@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Waypoint } from "react-waypoint";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Home from "./DesktopDesign/Home";
 import NavBarItems from "./DesktopDesign/NavBarItems";
 import Services from "./DesktopDesign/Services";
@@ -28,6 +25,12 @@ document.addEventListener(
 function DesktopDesign() {
   const [active, setActive] = useState('home');
   const [remove, setRemove] = useState('');
+  const [imageWidth, setWidth] = useState(0); 
+
+  useEffect(() => {
+    console.log('width from Desktop');
+    console.log(imageWidth)
+  }, [imageWidth]);
 
   function hasEntered(divName) {
     console.log(divName);
@@ -38,12 +41,16 @@ function DesktopDesign() {
     setRemove(divName);
   }
 
+  const handleWidth = (value) => {
+    setWidth(value);
+  }
+
   return (
     <>
       <div id="navbarDiv">
-        <NavBarItems />
+        <NavBarItems width={imageWidth} />
       </div>
-            <Home />
+            <Home sizeImage={handleWidth} />
             <Services />
             <Skills />
             <Portfolio />

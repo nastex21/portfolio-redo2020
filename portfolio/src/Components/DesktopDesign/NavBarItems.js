@@ -2,9 +2,10 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
-function NavBarItems({ activeClass }) {
+function NavBarItems({ activeClass, width }) {
+  console.log('width from Nav' + width);
   return (
-    <div id="navbarIndex">
+    <div id="navbarIndex" style={{'paddingLeft': width + 20}}>
       <Navbar id="navbar">
         <Nav>
           <Nav.Item>
