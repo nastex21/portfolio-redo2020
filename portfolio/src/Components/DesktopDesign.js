@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Home from "./DesktopDesign/Home";
-import NavBarItems from "./DesktopDesign/NavBarItems";
 import Services from "./DesktopDesign/Services";
 import Skills from "./DesktopDesign/Skills";
 import Portfolio from "./DesktopDesign/Portfolio";
