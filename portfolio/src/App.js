@@ -2,8 +2,7 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import useWindowSize from './util/WindowSize';
 import SideBar from "./Components/DesktopDesign/Component/SideBar";
@@ -14,7 +13,6 @@ import Services from './Components/DesktopDesign/Services';
 import Portfolio from './Components/DesktopDesign/Portfolio';
 import Contact from './Components/DesktopDesign/Contact';
 import MobileDesign from './Components/MobileDesign';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const size = useWindowSize();
@@ -56,7 +54,6 @@ function App() {
   return (
     <div className="App">
       { size.width < 768 ? <MobileDesign /> : desktopFunc() }
-        } 
     </div>
   );
 }
