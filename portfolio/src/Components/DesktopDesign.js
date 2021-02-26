@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import SideBar from './DesktopDesign/Component/SideBar';
 import Home from "./DesktopDesign/Home";
 import Services from "./DesktopDesign/Services";
 import Skills from "./DesktopDesign/Skills";
@@ -23,6 +24,7 @@ function DesktopDesign() {
 
   return (
     <>
+            <SideBar />
             <Home />
             <Services />
             <Skills />
