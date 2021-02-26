@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Waypoint } from "react-waypoint";
 import Home from "./DesktopDesign/Home";
 import NavBarItems from "./DesktopDesign/NavBarItems";
 import Services from "./DesktopDesign/Services";
@@ -9,28 +8,10 @@ import AboutMe from './DesktopDesign/AboutMe';
 import Contact from "./DesktopDesign/Contact";
 import Footer from "./DesktopDesign/Footer";
 import "./css/Desktop.css";
-import SweetScroll from 'sweet-scroll';
-
-document.addEventListener(
-  'DOMContentLoaded',
-  () => {
-    const scroller = new SweetScroll({
-      trigger: '[data-scroll]',
-      horizontal: true,
-    });
-  },
-  false,
-);
 
 function DesktopDesign() {
   const [active, setActive] = useState('home');
   const [remove, setRemove] = useState('');
-  const [imageWidth, setWidth] = useState(0); 
-
-  useEffect(() => {
-    console.log('width from Desktop');
-    console.log(imageWidth)
-  }, [imageWidth]);
 
   function hasEntered(divName) {
     console.log(divName);
@@ -41,16 +22,9 @@ function DesktopDesign() {
     setRemove(divName);
   }
 
-  const handleWidth = (value) => {
-    setWidth(value);
-  }
-
   return (
     <>
-      <div id="navbarDiv">
-        <NavBarItems width={imageWidth} />
-      </div>
-            <Home sizeImage={handleWidth} />
+            <Home />
             <Services />
             <Skills />
             <Portfolio />

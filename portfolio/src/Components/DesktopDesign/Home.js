@@ -1,22 +1,10 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect } from "react";
 
-function Home({sizeImage}) {
-  const widthSize = useRef(null);
-  const [imageWidth, setWidth] = useState(0);
-
-
-  useEffect(() => {
-    setWidth(widthSize.current.clientWidth);
-  });
-
-  useEffect(() => {
-    console.log(imageWidth);
-    sizeImage(imageWidth);
-  }, [imageWidth]);
+function Home() {
 
   return (
     <div id="home" className="contentDiv">
-      <img ref={widthSize} className="img-fluid" src="/images/IMG-3210.jpg" alt="Me" />
+      <img className="img-fluid" src="/images/IMG-3210.jpg" alt="Me" />
       <section>
         <h4 id="title-name">Software Engineer</h4>
         <h1>Tony Salazar</h1>
