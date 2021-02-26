@@ -1,6 +1,7 @@
 import React from "react";
 
-function SideBar() {
+function SideBar({locationPath}) {
+  console.log(locationPath);
   return (
     <div className="wrapper">
       <nav id="sidebar">
@@ -14,22 +15,22 @@ function SideBar() {
           </div>
           <hr />
           <li>
-            <a href="/">Home</a>
+            <a id={locationPath == 'home' ? 'active' : null } href="/">Home</a>
           </li>
           <li>
-            <a href="/services">Services</a>
+            <a id={locationPath == 'services' ? 'active' : null } href="/services">Services</a>
           </li>
           <li>
-            <a href="/skills">Skills</a>
+            <a id={locationPath == 'skills' ? 'active' : null } href="/skills">Skills</a>
           </li>
           <li>
-            <a href="/portfolio">Portfolio</a>
+            <a id={locationPath == 'portfolio' ? 'active' : null } href="/portfolio">Portfolio</a>
           </li>
           <li>
-              <a href="/aboutme">About Me</a>
+              <a id={locationPath == 'aboutme' ? 'active' : null } href="/aboutme">About Me</a>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a id={locationPath == 'contact' ? 'active' : null } href="/contact">Contact</a>
           </li>
         </ul>
       </nav>

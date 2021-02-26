@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,37 +13,44 @@ import Services from './Components/DesktopDesign/Services';
 import Portfolio from './Components/DesktopDesign/Portfolio';
 import Contact from './Components/DesktopDesign/Contact';
 import MobileDesign from './Components/MobileDesign';
+import { useEffect } from "react";
 
 function App() {
+  const [location, setLocation ] = useState('home');
   const size = useWindowSize();
+
+  const locationUpdate = (pathValue) => {
+    console.log(pathValue);
+    setLocation(pathValue);
+  };
 
   const desktopFunc = () => {
     return (
     <Router>
     <div>
-      <SideBar />
+      <SideBar locationPath={location} />
 
       <Switch>
         <Route path="/aboutme">
-          <AboutMe />
+          <AboutMe setPath={locationUpdate} />
         </Route>
         <Route path="/skills">
-          <Skills />
+          <Skills setPath={locationUpdate} />
         </Route>
         <Route path="/services">
-          <Services />
+          <Services setPath={locationUpdate} />
         </Route>
         <Route path="/portfolio">
-          <Portfolio />
+          <Portfolio setPath={locationUpdate} />
         </Route>
         <Route path="/Contact">
-          <Contact />
+          <Contact setPath={locationUpdate} />
         </Route>
         <Route path="/sklls">
-          <Skills />
+          <Skills setPath={locationUpdate} />
         </Route>
         <Route path="/">
-          <Home />
+          <Home setPath={locationUpdate} />
         </Route>
       </Switch>
     </div>

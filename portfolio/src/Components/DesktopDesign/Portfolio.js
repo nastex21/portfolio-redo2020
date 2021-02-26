@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-function Portfolio () {
+function Portfolio ({setPath}) {
+    useEffect(() => {
+        setPath('portfolio')
+      });
 
     return (
         <section id="portfolio" className="contentDiv">

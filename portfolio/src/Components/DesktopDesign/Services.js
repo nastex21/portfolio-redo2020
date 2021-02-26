@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from 'react';
 
-function Services () {
+function Services ({setPath}) {
+  useEffect(() => {
+    setPath('services')
+  });
 
     return (
       <section id="services" className="contentDiv">

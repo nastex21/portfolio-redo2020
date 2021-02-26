@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from 'react';
 
-function Skills () {
+function Skills ({setPath}) {
+  useEffect(() => {
+    setPath('skills')
+  });
   return (
     <section id="skills" className="contentDiv">
       <h1>What I Know</h1>

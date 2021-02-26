@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-function AboutMe () {
+function AboutMe ({setPath}) {
+
+    useEffect(() => {
+        setPath('aboutme')
+      });
 
     return (
         <section id="aboutme" className="contentDiv">

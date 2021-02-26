@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-function Contact() {
+function Contact({setPath}) {
+
+    useEffect(() => {
+        setPath('contact')
+      });
 
     return (
         <section id="contact" className="contentDiv">

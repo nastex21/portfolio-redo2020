@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 
-function Home() {
+function Home({setPath}) {
+
+  useEffect(() => {
+    setPath('home')
+  })
 
   return (
     <div id="home" className="contentDiv">
