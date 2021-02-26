@@ -8,7 +8,10 @@ function SideBar() {
           <img src="/images/resizedIMG.jpg" alt="Me" />
         </div>
         <ul className="list-unstyled components">
-          <p>Tony Salazar</p>
+          <div id="myName">
+            <span id="firstName">Tony </span>
+            <span id="lastName"> Salazar</span>
+          </div>
           <hr />
           <li>
             <a href="/">Home</a>

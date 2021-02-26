@@ -42,10 +42,21 @@
     border: 3px solid var(--color-white);
   }
 
-  #sidebar > ul > p {
+  #myName {
     font-family: var(--cursive-font);
     font-size: 2em;
+    width: 100%;
     text-align: center;
+  }
+
+  #firstName {
+    display: inline-block;
+    color: var(--color-white);
+  }
+
+  #lastName {
+    display: inline-block;
+    color: var(--color-accent1);
   }
 
   #sidebar > ul > hr {
