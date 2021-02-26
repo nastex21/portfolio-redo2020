@@ -1,8 +1,10 @@
 :root {
-
-  }  
-
-
+  --color-white: rgb(221, 221, 221);
+  --color-black: rgb(31, 31, 31);
+  --color-accent1: rgb(255, 158, 116);
+  --cursive-font: 'Lobster', cursive;
+  --sidebar-font: 'Open Sans', sans-serif;
+}  
 
 /* DESKTOP */
 
@@ -11,11 +13,13 @@
     height: 100vh;
   }
   
+  /* SIDEBAR */
   .wrapper {
     display: flex;
     width: 100%;
+    height: 100vh;
   }
-  
+
   #sidebar {
     width: 250px;
     position: fixed;
@@ -23,8 +27,45 @@
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
-    color: #fff;
-    transition: all 0.3s;
+    background: var(--color-black);
+    color: var(--color-white);
+    }
+
+  #sidebarIMG > img {
+    height: 30vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    border: 3px solid var(--color-white);
   }
+
+  #sidebar > ul > p {
+    font-family: var(--cursive-font);
+    font-size: 2em;
+    text-align: center;
+  }
+
+  #sidebar > ul > hr {
+    height: 5px;
+    color: var(--color-white);    
+    background-color: var(--color-white);
+    width: 80%;
+  }
+  
+  #sidebar > ul > li {
+    padding-left: 10%;
+    font-family: var(--sidebar-font);
+    font-size: 1.3em;
+    font-weight: 800;
+  }
+
+  #sidebar > ul > li > a {
+    color: var(--color-accent1);
+    
+  }
+ 
+    /* END */
 }
