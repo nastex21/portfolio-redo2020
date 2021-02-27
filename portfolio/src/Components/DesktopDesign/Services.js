@@ -9,7 +9,6 @@ function Services ({setPath}) {
 
     return (
       <section id="services" className="contentDiv">
-        <h1>Services</h1>
         <div className="row">
           <div id="servivcebox1" className=" col-md-5 servicesboxes">
             <div className="row align-items-center cardInfo">
@@ -17,7 +16,7 @@ function Services ({setPath}) {
                 <FontAwesomeIcon className="serviceicons" icon={faTabletAlt} />
               </div>
               <div className=" col-10 service-articles">
-                <span className="white-font">Web Apps</span>
+                <h1 className="serviceTitle">Web Apps</h1>
                 <p>
                   From top to bottom, from the design to the logic to its
                   deployment on servers, I'll create applications that run on the
@@ -28,13 +27,13 @@ function Services ({setPath}) {
           </div>
           <div
             id="servivcebox2"
-            className="col-md-5 ml-auto servicesboxes">
+            className="col-md-5 servicesboxes">
             <div className="row align-items-center cardInfo">
               <div className="col-2 service-icon text-center">
                 <FontAwesomeIcon className="serviceicons" icon={faPalette} />
               </div>
               <div className=" col-10 service-articles">
-                <span className="white-font">Front-end</span>
+                <h1 className="serviceTitle">Front-end</h1>
                 <p>
                   The core or engine of an application is the internal logic but
                   there’s also other components that help drive it such as the
@@ -52,7 +51,7 @@ function Services ({setPath}) {
                 <FontAwesomeIcon className="serviceicons" icon={faServer} />
               </div>
               <div className=" col-10 service-articles">
-                <span className="white-font">Back-end</span>
+                <h1 className="serviceTitle">Back-end</h1>
                 <p>
                   Taking a beautifully created web site or app and publishing it
                   to the internet requires knowledge in client side and server
@@ -65,13 +64,13 @@ function Services ({setPath}) {
               </div>
             </div>
           </div>
-          <div id="servivcebox4" className="col-md-5 ml-auto servicesboxes">
+          <div id="servivcebox4" className="col-md-5 servicesboxes">
             <div className="row align-items-center cardInfo">
               <div className="col-2 service-icon text-center">
                 <FontAwesomeIcon className="serviceicons" icon={faLock} />
               </div>
               <div className=" col-10 service-articles">
-                <span className="white-font">Security</span>
+                <h1 className="serviceTitle">Security</h1>
                 <p>
                   The security of a website is of utmost importance and I take it
                   as such. Whether it’s protecting the sensitive data and
