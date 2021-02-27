@@ -9,14 +9,8 @@ function Home({setPath}) {
   return (
     <div id="home" className="contentDiv">
       <section>
-        <h4 id="title-name">Software Engineer</h4>
-        <h1>Tony Salazar</h1>
-        <h1>
-          <div id="typedtext"></div>
-        </h1>
         <p>
-          Hello, my name is Tony and I’m a passionate software engineer! I love
-          taking what are originally thoughts and ideas, putting pen to paper
+          Hello, my name is <strong id="orange">Tony</strong> and I’m a <strong id="orange">passionate software engineer</strong>! I love taking what are originally thoughts and ideas, putting pen to paper
           and then creating fully-fledged web applications! And with new
           technologies on the horizon and the field always evolving, part of the
           thrill is to be on your toes to learn new things. So thank you for

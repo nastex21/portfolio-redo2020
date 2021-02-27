@@ -27,7 +27,6 @@ function App() {
   const desktopFunc = () => {
     return (
     <Router>
-    <div>
       <SideBar locationPath={location} />
 
       <Switch>
@@ -53,7 +52,6 @@ function App() {
           <Home setPath={locationUpdate} />
         </Route>
       </Switch>
-    </div>
   </Router>
     )
   }
