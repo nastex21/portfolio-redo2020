@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTabletAlt, faServer, faPalette, faLock  } from "@fortawesome/free-solid-svg-icons";
 
 function Services ({setPath}) {
   useEffect(() => {
@@ -8,13 +10,13 @@ function Services ({setPath}) {
     return (
       <section id="services" className="contentDiv">
         <h1>Services</h1>
-        <div className="row mt-5">
-          <div id="servivcebox1" className=" col-md-5 mb-5 servicesboxes">
+        <div className="row">
+          <div id="servivcebox1" className=" col-md-5 servicesboxes">
             <div className="row align-items-center cardInfo">
-              <div className="col-2 mt-2 service-icon text-center">
-                <i className="fas fa-tablet-alt serviceicons" />
+              <div className="col-2 service-icon text-center">
+                <FontAwesomeIcon className="serviceicons" icon={faTabletAlt} />
               </div>
-              <div className="py-5 col-10 service-articles">
+              <div className=" col-10 service-articles">
                 <span className="white-font">Web Apps</span>
                 <p>
                   From top to bottom, from the design to the logic to its
@@ -26,12 +28,12 @@ function Services ({setPath}) {
           </div>
           <div
             id="servivcebox2"
-            className="col-md-5 mr-5 mb-5 ml-auto servicesboxes">
+            className="col-md-5 ml-auto servicesboxes">
             <div className="row align-items-center cardInfo">
               <div className="col-2 service-icon text-center">
-                <i className="fas fa-palette serviceicons" />
+                <FontAwesomeIcon className="serviceicons" icon={faPalette} />
               </div>
-              <div className="py-5 col-10 service-articles">
+              <div className=" col-10 service-articles">
                 <span className="white-font">Front-end</span>
                 <p>
                   The core or engine of an application is the internal logic but
@@ -44,14 +46,12 @@ function Services ({setPath}) {
               </div>
             </div>
           </div>
-          <div className="w-100"></div>
-
-          <div id="servivcebox3" className="col-md-5 mr-5 servicesboxes">
+          <div id="servivcebox3" className="col-md-5 servicesboxes">
             <div className="row align-items-center cardInfo">
               <div className="col-2 service-icon text-center">
-                <i className="fas fa-server serviceicons" />
+                <FontAwesomeIcon className="serviceicons" icon={faServer} />
               </div>
-              <div className="py-5 col-10 service-articles">
+              <div className=" col-10 service-articles">
                 <span className="white-font">Back-end</span>
                 <p>
                   Taking a beautifully created web site or app and publishing it
@@ -65,12 +65,12 @@ function Services ({setPath}) {
               </div>
             </div>
           </div>
-          <div id="servivcebox4" className="col-md-5 mr-5 ml-auto servicesboxes">
+          <div id="servivcebox4" className="col-md-5 ml-auto servicesboxes">
             <div className="row align-items-center cardInfo">
               <div className="col-2 service-icon text-center">
-                <i className="fas fa-lock serviceicons" />
+                <FontAwesomeIcon className="serviceicons" icon={faLock} />
               </div>
-              <div className="py-5 col-10 service-articles">
+              <div className=" col-10 service-articles">
                 <span className="white-font">Security</span>
                 <p>
                   The security of a website is of utmost importance and I take it

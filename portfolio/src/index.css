@@ -1,11 +1,20 @@
 :root {
+  /* Colors */
   --color-white: rgb(221, 221, 221);
   --color-black: rgb(31, 31, 31);
   --color-light-black: rgb(56, 56, 56);
   --color-accent1: rgb(255, 158, 116);
+
+  /* Fonts */
   --cursive-font: 'Lobster', cursive;
   --sidebar-font: 'Open Sans', sans-serif;
+
+  /* Font sizes */
   --home-font-size: 1.3em;
+
+  /* Icon sizes */
+  --service-icons: 2em; 
+
 }  
 
 body {
@@ -119,6 +128,11 @@ p, span, h1, h2, h3, h4, h5, h6 {
     /* end */
 
     /* Services */
+    
+    .serviceicons {
+      color: var(--color-accent1);
+      font-size: var(--service-icons);
+    }
 
     /* end */
 
