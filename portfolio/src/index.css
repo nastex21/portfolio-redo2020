@@ -11,6 +11,7 @@
 
   /* Font sizes */
   --home-font-size: 1.3em;
+  --footer-small-size: .8em;
 
   /* Font weight */
   --weight-hard: 600;
@@ -22,6 +23,8 @@
 
 body {
   background-color: var(--color-light-black);
+  display: flex;
+  flex-direction: column;
 }
 
 p {
@@ -43,29 +46,28 @@ p {
 /* end */
 
 /* footer */
-#footer {
-  color: var(--color-accent1);
+footer {
+  font-size: var(--footer-small-size);
   text-align: center;
   font-weight: var(--weight-hard);
+  margin-top: auto;
 }
 
-footer {
-
+footer > p {
+  color: var(--color-accent1);
 }
 /* end */
 
 /* DESKTOP */
 
 @media (min-width: 768px) {
-  html, body, #root, .App, section{
-    height: 100vh;
+  html {
     overflow: hidden;
   }
-  
   /* SIDEBAR */
   .wrapper {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     width: 250px;
     float: left;
   }
@@ -75,7 +77,7 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    min-height: 100vh;
     z-index: 999;
     background: var(--color-black);
     color: var(--color-white);
@@ -134,19 +136,17 @@ footer {
     /* END */
 
     .contentDiv {
-      right: 0;
+      min-height: 100vh;
+      max-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     /* Home Section */
-    #home {
+    #home > section {
       font-size: var(--home-font-size);
     }
 
-    #home > section > p {
-      height: 100vh;
-      padding-top: 40vh;
-      padding-left: 300px;
-    }
 
     /* end */
 
@@ -190,6 +190,15 @@ footer {
     /* end */
 
     /* Contact */
+
+    /* end */
+
+    /* Footer */
+    footer {
+      margin-top: auto;
+      width: 100%;
+      font-size: var(--footer-small-size) !important;
+  }
 
     /* end */
 

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTabletAlt, faServer, faPalette, faLock  } from "@fortawesome/free-solid-svg-icons";
+import Footer from './Footer';
 
 function Services ({setPath}) {
   useEffect(() => {
@@ -8,7 +9,8 @@ function Services ({setPath}) {
   });
 
     return (
-      <section id="services" className="contentDiv">
+      <div className="contentDiv">
+      <section id="services">
         <div className="row">
           <div id="servivcebox1" className=" col-md-5 servicesboxes">
             <div className="row align-items-center cardInfo">
@@ -84,6 +86,8 @@ function Services ({setPath}) {
           </div>
         </div>
       </section>
+      <Footer />
+      </div>
   );
 };
 

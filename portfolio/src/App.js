@@ -12,16 +12,13 @@ import Skills from './Components/DesktopDesign/Skills';
 import Services from './Components/DesktopDesign/Services';
 import Portfolio from './Components/DesktopDesign/Portfolio';
 import Contact from './Components/DesktopDesign/Contact';
-import Footer from './Components/DesktopDesign/Footer';
 import MobileDesign from './Components/MobileDesign';
-import { useEffect } from "react";
 
 function App() {
   const [location, setLocation ] = useState('home');
   const size = useWindowSize();
 
   const locationUpdate = (pathValue) => {
-    console.log(pathValue);
     setLocation(pathValue);
   };
 
@@ -53,7 +50,6 @@ function App() {
           <Home setPath={locationUpdate} />
         </Route>
       </Switch>
-      <Footer />
   </Router>
     )
   }

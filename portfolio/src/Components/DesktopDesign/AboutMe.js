@@ -1,15 +1,19 @@
 import React, { useEffect } from 'react';
+import Footer from './Footer';
 
-function AboutMe ({setPath}) {
+function AboutMe({ setPath }) {
 
     useEffect(() => {
         setPath('aboutme')
-      });
+    });
 
     return (
-        <section id="aboutme" className="contentDiv">
-            <p>About Me</p>
-        </section>
+        <div className="contentDiv">
+            <section id="aboutme">
+                <p>About Me</p>
+            </section>
+            <Footer />
+        </div>
     )
 };
 

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import Footer from './Footer';
 
 function Portfolio({ setPath }) {
     useEffect(() => {
@@ -8,92 +9,95 @@ function Portfolio({ setPath }) {
     });
 
     return (
-        <section id="portfolio" className="contentDiv">
-            <div className="cardGroup h-100" id="card1">
-                <Card>
-                    <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+        <div className="contentDiv">
+            <section id="portfolio">
+                <div className="cardGroup h-100" id="card1">
+                    <Card>
+                        <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the bulk of
+                                the card's content.
                     </Card.Text>
-                        <Button variant="primary" href="">Demo</Button>
-                        <Button variant="primary" href="">Code</Button>
-                    </Card.Body>
-                </Card> 
-            </div>
-            <div className="cardGroup h-100" id="card2">
-                <Card>
-                    <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            <Button variant="primary" href="">Demo</Button>
+                            <Button variant="primary" href="">Code</Button>
+                        </Card.Body>
+                    </Card>
+                </div>
+                <div className="cardGroup h-100" id="card2">
+                    <Card>
+                        <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the bulk of
+                                the card's content.
                     </Card.Text>
-                    <Button variant="primary" href="">Demo</Button>
-                    <Button variant="primary" href="">Code</Button>
-                    </Card.Body>
-                </Card>
-            </div>
-            <div className="cardGroup h-100" id="card3">
-                <Card>
-                    <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            <Button variant="primary" href="">Demo</Button>
+                            <Button variant="primary" href="">Code</Button>
+                        </Card.Body>
+                    </Card>
+                </div>
+                <div className="cardGroup h-100" id="card3">
+                    <Card>
+                        <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the bulk of
+                                the card's content.
                     </Card.Text>
-                    <Button variant="primary" href="">Demo</Button>
-                    <Button variant="primary" href="">Code</Button>
-                    </Card.Body>
-                </Card>
-            </div>
-            <div className="cardGroup" id="card4">
-                <Card>
-                    <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            <Button variant="primary" href="">Demo</Button>
+                            <Button variant="primary" href="">Code</Button>
+                        </Card.Body>
+                    </Card>
+                </div>
+                <div className="cardGroup" id="card4">
+                    <Card>
+                        <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the bulk of
+                                the card's content.
                     </Card.Text>
-                    <Button variant="primary" href="">Demo</Button>
-                    <Button variant="primary" href="">Code</Button>
-                    </Card.Body>
-                </Card>
-            </div>
-            <div className="cardGroup" id="card5">
-                <Card>
-                    <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            <Button variant="primary" href="">Demo</Button>
+                            <Button variant="primary" href="">Code</Button>
+                        </Card.Body>
+                    </Card>
+                </div>
+                <div className="cardGroup" id="card5">
+                    <Card>
+                        <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the bulk of
+                                the card's content.
                     </Card.Text>
-                    <Button variant="primary" href="">Demo</Button>
-                    <Button variant="primary" href="">Code</Button>
-                    </Card.Body>
-                </Card>
-            </div>
-            <div className="cardGroup" id="card6">
-                <Card>
-                    <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            <Button variant="primary" href="">Demo</Button>
+                            <Button variant="primary" href="">Code</Button>
+                        </Card.Body>
+                    </Card>
+                </div>
+                <div className="cardGroup" id="card6">
+                    <Card>
+                        <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the bulk of
+                                the card's content.
                     </Card.Text>
-                    <Button variant="primary" href="">Demo</Button>
-                    <Button variant="primary" href="">Code</Button>
-                    </Card.Body>
-                </Card>
-            </div>
-        </section>
+                            <Button variant="primary" href="">Demo</Button>
+                            <Button variant="primary" href="">Code</Button>
+                        </Card.Body>
+                    </Card>
+                </div>
+            </section>
+            <Footer />
+        </div>
     )
 };
 
