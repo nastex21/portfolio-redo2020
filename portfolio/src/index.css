@@ -12,6 +12,9 @@
   /* Font sizes */
   --home-font-size: 1.3em;
 
+  /* Font weight */
+  --weight-hard: 600;
+
   /* Icon sizes */
   --service-icons: 2em; 
 
@@ -24,7 +27,7 @@ body {
 p {
   color: var(--color-white);
   font-family: var(--sidebar-font);
-  font-weight: 600;
+  font-weight: var(--weight-hard);
 }
 
 .orange {
@@ -37,6 +40,18 @@ p {
   font-family: var(--cursive-font);
 }
 
+/* end */
+
+/* footer */
+#footer {
+  color: var(--color-accent1);
+  text-align: center;
+  font-weight: var(--weight-hard);
+}
+
+footer {
+
+}
 /* end */
 
 /* DESKTOP */
@@ -154,6 +169,19 @@ p {
     /* end */
 
     /* Portfolio */
+    #portfolio {
+      max-height: 95vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 10px;
+      row-gap: 15px;
+    }
+
+    .card-img-top {
+      width: 100px;
+      height: 100px;
+    }
+
     
     /* end */
 
@@ -165,7 +193,4 @@ p {
 
     /* end */
 
-    /* footer */
-
-    /* end */
 }

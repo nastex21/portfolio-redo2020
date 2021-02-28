@@ -2,9 +2,9 @@ import React from "react";
 
 function Footer() {
   return (
-    <section className="footer-section  mr-5 mt-4">
+    <section id="footer">
       <footer>
-        <span className="copyright">&#169;</span> 2020 ALL RIGHTS RESERVED
+        <span className="copyright">&#169; 2021 ALL RIGHTS RESERVED</span> 
       </footer>
     </section>
   );

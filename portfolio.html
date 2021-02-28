@@ -1,193 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="/vendor/hamburgers.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Tony Salazar</title>
-</head>
-
-<body>
-    <div id="myNav" class="overlay">
-        <!-- Navigation links (hidden by default) -->
-        <div class="overlay-content">
-            <a href="/">Home</a>
-            <a href="/aboutme.html">About Me</a>
-            <a href="/contact.html">Contact</a>
-        </div>
-    </div>
-    <div id="burgerID">
-        <button id="burgerButton" class="hamburger hamburger--arrowturn" type="button">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
-    </div>
-    <div class="container-fluid px-0">
-        <div class="row">
-            <div class="left-container col-md-4 p-0 m-0">
-                <picture>
-                    <source class="image-left" media="(max-width: 767.999px)" type="image/jpeg"
-                        srcset="/images/IMG-3210.jpg">
-                    <source class="image-left" media="(min-width: 768px)" type="image/jpeg"
-                        srcset="/images/IMG-3210.jpg">
-                    <img src="/images/fff.jpeg" class="image-left">
-                </picture>
+<div class="page-top">
+    <div class="row">
+        <div class="card bg-dark border-none mb-3 col-lg-4 col-sm-6">
+            <img class="card-img-top"
+                src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
             </div>
-            <div class="right-container col-md-8">
-                <div id="nav-bar" class="navbarDiv mb-5">
-                    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #191919;">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav d-flex justify-content-center">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/"><span class="navlink-address">Home</span></a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="/portfolio.html">Portfolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/aboutme.html">About Me</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-                <section>
-                    <h4>Stuff I've done</h4>
-                    <h1>Portfolio</h1>
-                </section>
-                <!-- Page Content -->
-                <div class="page-top">
-                    <div class="row">
-                    <!--     <div class="col-12 col-sm-6 col-lg-3 pt-5 img-thumb">
-                            <img src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                                class="w-100" alt="" data-target="#carouselExample" data-slide-to="0">
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 pt-5 img-thumb">
-                            <img src="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                                class="w-100" alt="" data-target="#carouselExample" data-slide-to="1">
-
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 pt-5 img-thumb">
-                            <img src="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                class="w-100" alt="" data-target="#carouselExample" data-slide-to="2">
-
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 pt-5 img-thumb">
-                            <img src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                class="w-100" alt="" data-target="#carouselExample" data-slide-to="3">
-
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 pt-5 img-thumb">
-                            <img src="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                                class="w-100" alt="" data-target="#carouselExample" data-slide-to="4">
-
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 pt-5 img-thumb">
-                            <img src="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                                class="w-100" alt="" data-target="#carouselExample" data-slide-to="5">
-
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 pt-5 img-thumb">
-                            <img src="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                class="w-100" alt="" data-target="#carouselExample" data-slide-to="6">
-
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 pt-5 img-thumb">
-                            <img src="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                class="w-100" alt="" data-target="#carouselExample" data-slide-to="7">
-                        </div> -->
-                        <div class="card bg-dark border-none mb-3 col-lg-4 col-sm-6">
-                            <img class="card-img-top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Card image cap">
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                              </div>
-                          </div>
-                          <div class="card bg-dark border-none mb-3 col-lg-4 col-sm-6">
-                            <img class="card-img-top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Card image cap">
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                              </div>
-                          </div>
-                          <div class="card bg-dark border-none mb-3 col-lg-4 col-sm-6">
-                            <img class="card-img-top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Card image cap">
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                              </div>
-                          </div>
-                          <div class="card bg-dark border-none mb-3 col-lg-4 col-sm-6">
-                            <img class="card-img-top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Card image cap">
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                              </div>
-                          </div>
-                          <div class="card bg-dark border-none mb-3 col-lg-4 col-sm-6">
-                            <img class="card-img-top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Card image cap">
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                              </div>
-                          </div>
-                          <div class="card bg-dark border-none mb-3 col-lg-4 col-sm-6">
-                            <img class="card-img-top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Card image cap">
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                              </div>
-                          </div>
-                    </div>
-                </div>
-                <section class="footer-section">
-                    <footer>2020 ALL RIGHTS RESERVED</footer>
-                </section>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+        <div class="card bg-dark border-none mb-3 col-lg-4 col-sm-6">
+            <img class="card-img-top"
+                src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+        <div class="card bg-dark border-none mb-3 col-lg-4 col-sm-6">
+            <img class="card-img-top"
+                src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+        <div class="card bg-dark border-none mb-3 col-lg-4 col-sm-6">
+            <img class="card-img-top"
+                src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+        <div class="card bg-dark border-none mb-3 col-lg-4 col-sm-6">
+            <img class="card-img-top"
+                src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+        <div class="card bg-dark border-none mb-3 col-lg-4 col-sm-6">
+            <img class="card-img-top"
+                src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <script src="/js/index.js"></script>
-</body>
-
-</html>
+</div>

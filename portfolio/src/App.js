@@ -12,6 +12,7 @@ import Skills from './Components/DesktopDesign/Skills';
 import Services from './Components/DesktopDesign/Services';
 import Portfolio from './Components/DesktopDesign/Portfolio';
 import Contact from './Components/DesktopDesign/Contact';
+import Footer from './Components/DesktopDesign/Footer';
 import MobileDesign from './Components/MobileDesign';
 import { useEffect } from "react";
 
@@ -52,6 +53,7 @@ function App() {
           <Home setPath={locationUpdate} />
         </Route>
       </Switch>
+      <Footer />
   </Router>
     )
   }
