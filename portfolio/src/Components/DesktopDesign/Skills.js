@@ -10,7 +10,7 @@ function Skills({ setPath }) {
   return (
     <div className="contentDiv">
       <section id="skills">
-        <h1>What I Know</h1>
+     {/*    <h1>What I Know</h1>
         <div id="skillsCards">
           <Card>
             <Card.Header as="h1">Front-end</Card.Header>
@@ -68,7 +68,7 @@ function Skills({ setPath }) {
           OpenWeatherMap, etc Experienced with macOS and Linux, and their
           terminals Self-motivated individual that’s not afraid of learning new
           programming languages or frameworks.
-        </p>
+        </p> */}
       </section>
       <Footer />
     </div>
