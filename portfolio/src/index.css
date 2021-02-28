@@ -53,7 +53,7 @@ footer {
   margin-top: auto;
 }
 
-footer > p {
+footer > span {
   color: var(--color-accent1);
 }
 /* end */
@@ -175,6 +175,12 @@ footer > p {
       grid-template-columns: 1fr 1fr 1fr;
       column-gap: 10px;
       row-gap: 15px;
+      margin-top: 50px;
+    }
+
+    .cardGroup {
+      width: 80%;
+      justify-self: center;
     }
 
     .card-img-top {

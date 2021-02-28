@@ -11,7 +11,7 @@ function Portfolio({ setPath }) {
     return (
         <div className="contentDiv">
             <section id="portfolio">
-                <div className="cardGroup h-100" id="card1">
+                <div className="cardGroup" id="card1">
                     <Card>
                         <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
                         <Card.Body>
@@ -25,7 +25,7 @@ function Portfolio({ setPath }) {
                         </Card.Body>
                     </Card>
                 </div>
-                <div className="cardGroup h-100" id="card2">
+                <div className="cardGroup" id="card2">
                     <Card>
                         <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
                         <Card.Body>
@@ -39,7 +39,7 @@ function Portfolio({ setPath }) {
                         </Card.Body>
                     </Card>
                 </div>
-                <div className="cardGroup h-100" id="card3">
+                <div className="cardGroup" id="card3">
                     <Card>
                         <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
                         <Card.Body>
