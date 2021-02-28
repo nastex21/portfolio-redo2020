@@ -15,13 +15,15 @@ function Portfolio({ setPath }) {
                     <Card>
                         <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
                         <Card.Body>
-                            
+
                             <Card.Text>
                                 Some quick example text to build on the card title and make up the bulk of
                                 the card's content.
                     </Card.Text>
-                            <Button variant="primary" href="">Demo</Button>
-                            <Button variant="primary" href="">Code</Button>
+                            <div className="cardButtons">
+                                <Button variant="primary" href="">Demo</Button>
+                                <Button variant="primary" href="">Code</Button>
+                            </div>
                         </Card.Body>
                     </Card>
                 </div>
@@ -29,13 +31,15 @@ function Portfolio({ setPath }) {
                     <Card>
                         <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
                         <Card.Body>
-                            
+
                             <Card.Text>
                                 Some quick example text to build on the card title and make up the bulk of
                                 the card's content.
                     </Card.Text>
-                            <Button variant="primary" href="">Demo</Button>
-                            <Button variant="primary" href="">Code</Button>
+                            <div className="cardButtons">
+                                <Button variant="primary" href="">Demo</Button>
+                                <Button variant="primary" href="">Code</Button>
+                            </div>
                         </Card.Body>
                     </Card>
                 </div>
@@ -43,13 +47,15 @@ function Portfolio({ setPath }) {
                     <Card>
                         <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
                         <Card.Body>
-                            
+
                             <Card.Text>
                                 Some quick example text to build on the card title and make up the bulk of
                                 the card's content.
                     </Card.Text>
-                            <Button variant="primary" href="">Demo</Button>
-                            <Button variant="primary" href="">Code</Button>
+                            <div className="cardButtons">
+                                <Button variant="primary" href="">Demo</Button>
+                                <Button variant="primary" href="">Code</Button>
+                            </div>
                         </Card.Body>
                     </Card>
                 </div>
@@ -57,13 +63,15 @@ function Portfolio({ setPath }) {
                     <Card>
                         <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
                         <Card.Body>
-                            
+
                             <Card.Text>
                                 Some quick example text to build on the card title and make up the bulk of
                                 the card's content.
                     </Card.Text>
-                            <Button variant="primary" href="">Demo</Button>
-                            <Button variant="primary" href="">Code</Button>
+                            <div className="cardButtons">
+                                <Button variant="primary" href="">Demo</Button>
+                                <Button variant="primary" href="">Code</Button>
+                            </div>
                         </Card.Body>
                     </Card>
                 </div>
@@ -71,13 +79,15 @@ function Portfolio({ setPath }) {
                     <Card>
                         <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
                         <Card.Body>
-                            
+
                             <Card.Text>
                                 Some quick example text to build on the card title and make up the bulk of
                                 the card's content.
                     </Card.Text>
-                            <Button variant="primary" href="">Demo</Button>
-                            <Button variant="primary" href="">Code</Button>
+                            <div className="cardButtons">
+                                <Button variant="primary" href="">Demo</Button>
+                                <Button variant="primary" href="">Code</Button>
+                            </div>
                         </Card.Body>
                     </Card>
                 </div>
@@ -85,13 +95,15 @@ function Portfolio({ setPath }) {
                     <Card>
                         <Card.Img variant="top" src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb" alt="project 1" />
                         <Card.Body>
-                            
+
                             <Card.Text>
                                 Some quick example text to build on the card title and make up the bulk of
                                 the card's content.
                     </Card.Text>
-                            <Button variant="primary" href="">Demo</Button>
-                            <Button variant="primary" href="">Code</Button>
+                            <div className="cardButtons">
+                                <Button variant="primary" href="">Demo</Button>
+                                <Button variant="primary" href="">Code</Button>
+                            </div>
                         </Card.Body>
                     </Card>
                 </div>

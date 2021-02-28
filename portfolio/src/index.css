@@ -188,6 +188,14 @@ footer > span {
       height: 100px;
     }
 
+    .cardButtons {
+      display: flex;
+      justify-content: center;
+    }
+
+    .cardButtons > button {
+      margin: 0 1.5em 0 1.5em;
+    }
     
     /* end */
 
