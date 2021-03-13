@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faGithubAlt, faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 
 function SideBar({ locationPath }) {
@@ -37,7 +37,8 @@ function SideBar({ locationPath }) {
               <a id={locationPath == 'contact' ? 'active' : null} href="/contact">Contact</a>
             </li>
             <div id="sidebarIcons">
-            <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon icon={faGithubAlt} />
+                <FontAwesomeIcon icon={faLinkedinIn} />
           </div>
           </ul>
         </div>
