@@ -1,21 +1,16 @@
 import React, { useState } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-import useWindowSize from './util/WindowSize';
+import useWindowSize from "./util/WindowSize";
 import SideBar from "./Components/DesktopDesign/Component/SideBar";
-import Home from './Components/DesktopDesign/Home';
-import AboutMe from './Components/DesktopDesign/AboutMe';
-import Skills from './Components/DesktopDesign/Skills';
-import Services from './Components/DesktopDesign/Services';
-import Portfolio from './Components/DesktopDesign/Portfolio';
-import Contact from './Components/DesktopDesign/Contact';
-import MobileDesign from './Components/MobileDesign';
+import Home from "./Components/DesktopDesign/Home";
+import AboutMe from "./Components/DesktopDesign/AboutMe";
+import Skills from "./Components/DesktopDesign/Skills";
+import Services from "./Components/DesktopDesign/Services";
+import Portfolio from "./Components/DesktopDesign/Portfolio";
+import Contact from "./Components/DesktopDesign/Contact";
+import MobileDesign from "./Components/MobileDesign";
 
 function App() {
-  const [location, setLocation ] = useState('home');
+  const [location, setLocation] = useState("home");
   const size = useWindowSize();
 
   const locationUpdate = (pathValue) => {
@@ -24,39 +19,27 @@ function App() {
 
   const desktopFunc = () => {
     return (
-    <Router>
-      <SideBar locationPath={location} />
+      <>
+        <SideBar locationPath={location} />
 
-      <Switch>
-        <Route path="/aboutme">
-          <AboutMe setPath={locationUpdate} />
-        </Route>
-        <Route path="/skills">
-          <Skills setPath={locationUpdate} />
-        </Route>
-        <Route path="/services">
-          <Services setPath={locationUpdate} />
-        </Route>
-        <Route path="/portfolio">
-          <Portfolio setPath={locationUpdate} />
-        </Route>
-        <Route path="/Contact">
-          <Contact setPath={locationUpdate} />
-        </Route>
-        <Route path="/sklls">
-          <Skills setPath={locationUpdate} />
-        </Route>
-        <Route path="/">
-          <Home setPath={locationUpdate} />
-        </Route>
-      </Switch>
-  </Router>
-    )
-  }
+        <Home setPath={locationUpdate} />
+
+        <AboutMe setPath={locationUpdate} />
+
+        <Skills setPath={locationUpdate} />
+
+        <Services setPath={locationUpdate} />
+
+        <Portfolio setPath={locationUpdate} />
+
+        <Contact setPath={locationUpdate} />
+      </>
+    );
+  };
 
   return (
     <div className="App">
-      { size.width < 768 ? <MobileDesign /> : desktopFunc() }
+      {size.width < 768 ? <MobileDesign /> : desktopFunc()}
     </div>
   );
 }
