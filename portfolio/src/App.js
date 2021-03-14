@@ -19,7 +19,7 @@ function App() {
       <>
         <SideBar location={path} />
         <InView
-          threshold="0.3"
+          threshold="0.5"
           as="section"
           onChange={(inView, entry) => entry.isIntersecting ? setPath('home') : null }>
           <div className="contentDiv" id="homeDiv">
@@ -27,7 +27,7 @@ function App() {
           </div>
         </InView>
         <InView
-          threshold="0.3"
+          threshold="0.5"
           as="section"
           onChange={(inView, entry, services) => entry.isIntersecting ? setPath('services') : null}>
           <div className="contentDiv" id="servicesDiv">
@@ -35,7 +35,7 @@ function App() {
           </div>
         </InView>
         <InView
-          threshold="0.3"
+          threshold="0.5"
           as="section"
           onChange={(inView, entry, skills) => entry.isIntersecting ? setPath('skills') : null}>
           <div className="contentDiv" id="skillsDiv">
@@ -43,7 +43,7 @@ function App() {
           </div>
         </InView>
         <InView
-          threshold="0.3"
+          threshold="0.5"
           as="section"
           onChange={(inView, entry, portfolio) => entry.isIntersecting ? setPath('portfolio') : null}>
           <div className="contentDiv" id="portfolioDiv">
@@ -51,7 +51,7 @@ function App() {
           </div>
         </InView>
         <InView
-          threshold="0.3"
+          threshold="0.5"
           as="section"
           onChange={(inView, entry, about) => entry.isIntersecting ? setPath('about') : null}>
           <div className="contentDiv" id="aboutDiv">
@@ -59,7 +59,7 @@ function App() {
           </div>
         </InView>
         <InView
-          threshold="0.3"
+          threshold="0.5"
           as="section"
           onChange={(inView, entry, contact) => entry.isIntersecting ? setPath('contact') : null}>
           <div className="contentDiv" id="contactDiv">
