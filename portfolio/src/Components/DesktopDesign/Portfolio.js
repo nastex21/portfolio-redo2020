@@ -3,11 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Footer from './Footer';
 
-function Portfolio({ setPath }) {
-    useEffect(() => {
-        setPath('portfolio')
-    });
-
+function Portfolio() {
     return (
         <div className="contentDiv">
             <section id="portfolio">
@@ -108,7 +104,6 @@ function Portfolio({ setPath }) {
                     </Card>
                 </div>
             </section>
-            <Footer />
         </div>
     )
 };

@@ -1,14 +1,8 @@
 import React, { useEffect } from "react";
 import Footer from './Footer';
 
-function Home({setPath}) {
-
-  useEffect(() => {
-    setPath('home')
-  })
-
+function Home() {
   return (
-    <div className="contentDiv">
       <section id="home">
         <p>
           Hello, my name is <strong className="orange">Tony</strong> and I’m a <strong className="orange">passionate software engineer</strong>! I love taking what are originally thoughts and ideas, putting pen to paper
@@ -19,8 +13,6 @@ function Home({setPath}) {
           and the things I can do!{" "}
         </p>
       </section>
-      <Footer />
-    </div>
   );
 }
 

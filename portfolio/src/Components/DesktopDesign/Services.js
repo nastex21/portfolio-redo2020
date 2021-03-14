@@ -3,10 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTabletAlt, faServer, faPalette, faLock  } from "@fortawesome/free-solid-svg-icons";
 import Footer from './Footer';
 
-function Services ({setPath}) {
-  useEffect(() => {
-    setPath('services')
-  });
+function Services () {
 
     return (
       <div className="contentDiv">
@@ -86,7 +83,6 @@ function Services ({setPath}) {
           </div>
         </div>
       </section>
-      <Footer />
       </div>
   );
 };

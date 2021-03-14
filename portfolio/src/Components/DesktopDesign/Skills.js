@@ -3,10 +3,8 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup'
 import Footer from './Footer';
 
-function Skills({ setPath }) {
-  useEffect(() => {
-    setPath('skills')
-  });
+function Skills() {
+
   return (
     <div className="contentDiv">
       <section id="skills">
@@ -70,7 +68,6 @@ function Skills({ setPath }) {
           programming languages or frameworks.
         </p>
       </section>
-      <Footer />
     </div>
   );
 };

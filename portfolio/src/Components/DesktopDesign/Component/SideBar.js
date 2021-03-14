@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faGithubAlt, faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 
-function SideBar({ locationPath }) {
-  console.log(locationPath);
+function SideBar() {
+
   return (
     <div className="wrapper">
       <nav id="sidebar">
@@ -19,22 +19,22 @@ function SideBar({ locationPath }) {
         <div id="sidebarItems">
           <ul className="list-unstyled components">
             <li>
-              <a id={locationPath == 'home' ? 'active' : null} href="/">Home</a>
+              <a href="#">Home</a>
             </li>
             <li>
-              <a id={locationPath == 'services' ? 'active' : null} href="/services">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li>
-              <a id={locationPath == 'skills' ? 'active' : null} href="/skills">Skills</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
-              <a id={locationPath == 'portfolio' ? 'active' : null} href="/portfolio">Portfolio</a>
+              <a href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a id={locationPath == 'aboutme' ? 'active' : null} href="/aboutme">About Me</a>
+              <a href="#aboutme">About Me</a>
             </li>
             <li>
-              <a id={locationPath == 'contact' ? 'active' : null} href="/contact">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
             <div id="sidebarIcons">
                 <FontAwesomeIcon icon={faGithubAlt} />

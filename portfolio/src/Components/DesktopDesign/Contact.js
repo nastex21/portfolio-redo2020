@@ -1,11 +1,7 @@
 import React, { useEffect } from 'react';
 import Footer from './Footer';
 
-function Contact({ setPath }) {
-
-    useEffect(() => {
-        setPath('contact')
-    });
+function Contact() {
 
     return (
         <div className="contentDiv">

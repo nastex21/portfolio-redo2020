@@ -65,9 +65,6 @@ footer > span {
 /* DESKTOP */
 
 @media (min-width: 768px) {
-  html {
-    overflow: hidden;
-  }
   /* SIDEBAR */
   .wrapper {
     display: flex;
