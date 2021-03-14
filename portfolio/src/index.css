@@ -169,10 +169,15 @@ footer > span {
     }
 
     /* Home Section */
-    #home > section {
+    #splashPage {
       font-size: var(--home-font-size);
+      width: 100vw;
+      height: 100vh;
+      background-image: url("./images/header.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
-
 
     /* end */
 

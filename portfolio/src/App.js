@@ -17,15 +17,8 @@ function App() {
   const desktopFunc = () => {
     return (
       <>
+        <Home />
         <SideBar location={path} />
-        <InView
-          threshold="0.5"
-          as="section"
-          onChange={(inView, entry) => entry.isIntersecting ? setPath('home') : null }>
-          <div className="contentDiv" id="homeDiv">
-            <Home />
-          </div>
-        </InView>
         <InView
           threshold="0.5"
           as="section"

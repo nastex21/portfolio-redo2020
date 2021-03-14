@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup'
-import Footer from './Footer';
 
 function Skills() {
 

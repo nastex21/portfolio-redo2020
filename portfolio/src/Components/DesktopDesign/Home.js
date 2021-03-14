@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
-import Footer from './Footer';
 
 function Home() {
   return (
-      <section id="home">
+      <div id="splashPage">
         <p>
           Hello, my name is <strong className="orange">Tony</strong> and I’m a <strong className="orange">passionate software engineer</strong>! I love taking what are originally thoughts and ideas, putting pen to paper
           and then creating fully-fledged web applications! And with new
@@ -12,7 +11,7 @@ function Home() {
           taking your time visiting my page and I hope you learn more about me
           and the things I can do!{" "}
         </p>
-      </section>
+      </div>
   );
 }
 
