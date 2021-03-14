@@ -154,8 +154,13 @@ footer > span {
     margin-right: 40px;
   }
 
+  .components > li {
+    position: relative;
+  }
+
   #active {
     color: var(--color-white) !important;
+    text-decoration: double underline var(--color-accent1);  
   }
  
     /* END */
@@ -170,13 +175,10 @@ footer > span {
 
     /* Home Section */
     #splashPage {
+      background-color: var(--color-black);
       font-size: var(--home-font-size);
       width: 100vw;
       height: 100vh;
-      background-image: url("./images/header.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
     }
 
     /* end */
