@@ -22,6 +22,14 @@ function App() {
         <InView
           threshold="0.5"
           as="section"
+          onChange={(inView, entry, about) => entry.isIntersecting ? setPath('about') : null}>
+          <div className="contentDiv" id="aboutDiv">
+            <AboutMe />
+          </div>
+        </InView>
+        <InView
+          threshold="0.5"
+          as="section"
           onChange={(inView, entry, services) => entry.isIntersecting ? setPath('services') : null}>
           <div className="contentDiv" id="servicesDiv">
             <Services />
@@ -41,14 +49,6 @@ function App() {
           onChange={(inView, entry, portfolio) => entry.isIntersecting ? setPath('portfolio') : null}>
           <div className="contentDiv" id="portfolioDiv">
             <Portfolio />
-          </div>
-        </InView>
-        <InView
-          threshold="0.5"
-          as="section"
-          onChange={(inView, entry, about) => entry.isIntersecting ? setPath('about') : null}>
-          <div className="contentDiv" id="aboutDiv">
-            <AboutMe />
           </div>
         </InView>
         <InView

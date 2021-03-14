@@ -19,7 +19,7 @@ function SideBar({location}) {
         <div id="sidebarItems">
           <ul className="list-unstyled components">
             <li>
-              <a id={location == 'home' ? 'active' : null } href="#">Home</a>
+              <a id={location == 'about' ? 'active' : null } href="#aboutme">About Me</a>
             </li>
             <li>
               <a id={location == 'services' ? 'active' : null } href="#services">Services</a>
@@ -29,9 +29,6 @@ function SideBar({location}) {
             </li>
             <li>
               <a id={location == 'portfolio' ? 'active' : null } href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a id={location == 'about' ? 'active' : null } href="#aboutme">About Me</a>
             </li>
             <li>
               <a id={location == 'contact' ? 'active' : null } href="#contact">Contact</a>
