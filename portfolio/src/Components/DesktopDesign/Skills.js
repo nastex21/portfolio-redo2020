@@ -9,7 +9,7 @@ function Skills() {
     <div className="contentDiv">
       <section id="skills">
   `` <h1>What I Know</h1>
-        <div id="skillsCards">
+      {/*   <div id="skillsCards">
           <Card>
             <Card.Header as="h1">Front-end</Card.Header>
             <Card.Body>
@@ -55,7 +55,7 @@ function Skills() {
               </Card.Text>
             </Card.Body>
           </Card>
-        </div>
+        </div> */}
         <p>
           Create functional websites and apps using HTML, CSS, and JavaScript Have
           knowledge of JavaScript libraries like React & Redux, d3.js Use CSS

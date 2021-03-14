@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useWindowSize from "./util/WindowSize";
-import { useInView } from "react-intersection-observer";
 import { InView } from "react-intersection-observer";
 import SideBar from "./Components/DesktopDesign/Component/SideBar";
 import Home from "./Components/DesktopDesign/Home";
@@ -12,55 +11,51 @@ import Contact from "./Components/DesktopDesign/Contact";
 import MobileDesign from "./Components/MobileDesign";
 
 function App() {
+  const [path, setPath] = useState('home');
   const size = useWindowSize();
-
-  const handleChange = (inview, entry) => {
-    console.log(inview);
-    console.log(entry);
-  };
 
   const desktopFunc = () => {
     return (
       <>
-        <SideBar />
+        <SideBar location={path} />
         <InView
           as="section"
-          onChange={(inView, entry) => handleChange(inView, entry)}>
+          onChange={(inView, entry) => entry.isIntersecting ? setPath('home') : null }>
           <div className="contentDiv" id="homeDiv">
             <Home />
           </div>
         </InView>
         <InView
           as="section"
-          onChange={(inView, entry) => handleChange(inView, entry)}>
+          onChange={(inView, entry, services) => entry.isIntersecting ? setPath('services') : null}>
           <div className="contentDiv" id="servicesDiv">
             <Services />
           </div>
         </InView>
         <InView
           as="section"
-          onChange={(inView, entry) => handleChange(inView, entry)}>
+          onChange={(inView, entry, skills) => entry.isIntersecting ? setPath('skills') : null}>
           <div className="contentDiv" id="skillsDiv">
             <Skills />
           </div>
         </InView>
         <InView
           as="section"
-          onChange={(inView, entry) => handleChange(inView, entry)}>
+          onChange={(inView, entry, portfolio) => entry.isIntersecting ? setPath('portfolio') : null}>
           <div className="contentDiv" id="portfolioDiv">
             <Portfolio />
           </div>
         </InView>
         <InView
           as="section"
-          onChange={(inView, entry) => handleChange(inView, entry)}>
+          onChange={(inView, entry, about) => entry.isIntersecting ? setPath('about') : null}>
           <div className="contentDiv" id="aboutDiv">
             <AboutMe />
           </div>
         </InView>
         <InView
           as="section"
-          onChange={(inView, entry) => handleChange(inView, entry)}>
+          onChange={(inView, entry, contact) => entry.isIntersecting ? setPath('contact') : null}>
           <div className="contentDiv" id="contactDiv">
             <Contact />
           </div>

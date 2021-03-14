@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faGithubAlt, faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 
-function SideBar() {
+function SideBar({location}) {
 
   return (
     <div className="wrapper">
@@ -19,22 +19,22 @@ function SideBar() {
         <div id="sidebarItems">
           <ul className="list-unstyled components">
             <li>
-              <a href="#">Home</a>
+              <a id={location == 'home' ? 'active' : null } href="#">Home</a>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <a id={location == 'services' ? 'active' : null } href="#services">Services</a>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <a id={location == 'skills' ? 'active' : null } href="#skills">Skills</a>
             </li>
             <li>
-              <a href="#portfolio">Portfolio</a>
+              <a id={location == 'portfolio' ? 'active' : null } href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a href="#aboutme">About Me</a>
+              <a id={location == 'about' ? 'active' : null } href="#aboutme">About Me</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a id={location == 'contact' ? 'active' : null } href="#contact">Contact</a>
             </li>
             <div id="sidebarIcons">
                 <FontAwesomeIcon icon={faGithubAlt} />

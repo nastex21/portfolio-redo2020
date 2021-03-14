@@ -23,6 +23,7 @@
 
 html {
 	scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -65,6 +66,9 @@ footer > span {
 /* DESKTOP */
 
 @media (min-width: 768px) {
+  body, html, #root, #app {
+    height: 600vh;
+  }
   /* SIDEBAR */
   .wrapper {
     display: flex;
@@ -161,11 +165,12 @@ footer > span {
  
     /* END */
 
-    .contentDiv {
-      min-height: 100vh;
-      max-height: 100vh;
-      display: flex;
-      flex-direction: column;
+    .App > section {
+      margin-left: 250px;
+    }
+
+    .contentDiv, section {
+      height: 100.1vh;
     }
 
     /* Home Section */
