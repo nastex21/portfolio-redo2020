@@ -6,7 +6,6 @@ import Footer from './Footer';
 function Skills() {
 
   return (
-    <div className="contentDiv">
       <section id="skills">
   `` <h1>What I Know</h1>
       {/*   <div id="skillsCards">
@@ -68,7 +67,6 @@ function Skills() {
           programming languages or frameworks.
         </p>
       </section>
-    </div>
   );
 };
 

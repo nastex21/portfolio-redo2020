@@ -5,7 +5,6 @@ import Footer from './Footer';
 
 function Portfolio() {
     return (
-        <div className="contentDiv">
             <section id="portfolio">
                 <div className="cardGroup" id="card1">
                     <Card>
@@ -104,7 +103,6 @@ function Portfolio() {
                     </Card>
                 </div>
             </section>
-        </div>
     )
 };
 

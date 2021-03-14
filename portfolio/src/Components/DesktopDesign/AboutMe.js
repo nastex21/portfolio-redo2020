@@ -4,11 +4,9 @@ import Footer from './Footer';
 function AboutMe() {
 
     return (
-        <div className="contentDiv">
             <section id="aboutme">
                 <p>About Me</p>
             </section>
-        </div>
     )
 };
 

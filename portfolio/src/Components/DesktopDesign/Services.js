@@ -6,7 +6,6 @@ import Footer from './Footer';
 function Services () {
 
     return (
-      <div className="contentDiv">
       <section id="services">
         <div className="row">
           <div id="servivcebox1" className=" col-md-5 servicesboxes">
@@ -83,7 +82,6 @@ function Services () {
           </div>
         </div>
       </section>
-      </div>
   );
 };
 
