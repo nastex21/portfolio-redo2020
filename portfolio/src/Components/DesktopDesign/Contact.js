@@ -7,8 +7,8 @@ function Contact() {
         <div className="contentDiv">
             <section id="contact">
                 <p>Contact</p>
+                <Footer />
             </section>
-            <Footer />
         </div>
 
     )

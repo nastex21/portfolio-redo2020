@@ -6,7 +6,7 @@ import { faGithub, faGithubAlt, faLinkedin, faLinkedinIn } from '@fortawesome/fr
 function SideBar({location}) {
 
   return (
-    <div className="wrapper">
+    <div className="wrapper" >
       <nav id="sidebar">
         <div id="sidebarIMG">
           <img src="/images/resizedIMG.jpg" alt="Me" />
