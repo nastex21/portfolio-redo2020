@@ -198,6 +198,16 @@ footer > span {
       height: 100vh;
     }
 
+    #logo {
+      width: 1.7em;
+      height: 1.7em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+
 
     #rightside {
       background-color: var(--color-accent1);
