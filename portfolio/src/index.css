@@ -308,6 +308,64 @@ footer > span {
     }
     /* end */
 
+    /* About me */
+    #aboutme {
+      background-color: var(--color-white2) !important;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 20% 60% 20%;
+      grid-template-areas: 
+        "title"
+        "middleContent"
+        "bottomContent";
+    }
+
+    #aboutTitle {
+      grid-area: title;
+      text-align: center;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #middleContent {
+      grid-area: middleContent;
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 70% 30%;
+      grid-template-areas: "meContent meStats";
+
+    }
+
+    #meContent {
+      grid-area: meContent;
+    }
+
+    #meStats {
+      grid-area: meStats;
+    }
+
+    #bottomContent{
+      grid-area: bottomContent;
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "education experience projectsNum";
+    }
+
+    #education {
+      grid-area: education;
+    }
+
+    #experience {
+      grid-area: experience;
+    }
+
+    #projectsNum {
+      grid-area: projectsNum;
+    }
+    /* end */
+
     /* Services */
     
     .serviceicons {
@@ -318,13 +376,6 @@ footer > span {
     .servicesboxes {
       margin-left: 50px;
       margin-top: 50px;
-    }
-
-    /* end */
-
-    /* About me */
-    #aboutme {
-      background-color: var(--color-white2) !important;
     }
 
     /* end */
