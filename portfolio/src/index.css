@@ -242,6 +242,8 @@ footer > span {
 
     .emphasisWord, .myName {
       font-weight: bold;
+      font-family: var(--cursive-font) !important;
+      text-transform: capitalize;
     }
 
     #lastName {

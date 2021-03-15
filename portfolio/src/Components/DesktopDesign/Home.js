@@ -10,12 +10,12 @@ function Home() {
       </div>
       <div id="rightside">
         <div id="rightText">
-          <p>a <span className="emphasisWord">DREAMER</span>.</p>
-          <p>a <span className="emphasisWord">BUILDER</span>.</p>
-          <p>a <span className="emphasisWord">CREATOR</span>.</p>
-          <p>a <span className="emphasisWord">MAINTAINER</span>.</p>
-          <p>a <span className="emphasisWord">DEVELOPER</span>.</p>
-          <p className="myName">TONY<span id="lastName">SALAZAR</span>.</p>
+          <p>a <span className="emphasisWord">dreamer</span>.</p>
+          <p>a <span className="emphasisWord">builder</span>.</p>
+          <p>a <span className="emphasisWord">creator</span>.</p>
+          <p>a <span className="emphasisWord">maintainer</span>.</p>
+          <p>a <span className="emphasisWord">developer</span>.</p>
+          <p className="myName">tony<span id="lastName">salazar</span>.</p>
         </div>
         <a href="#aboutme" className="arrow-container">
           <div className="arrow"></div>
