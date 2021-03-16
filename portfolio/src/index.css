@@ -4,12 +4,13 @@
   --color-white2: #ffffff;
   --color-black: rgb(22, 23, 26);
   --color-light-black: rgb(56, 56, 56);
+  --color-lighter-black: rgb(100, 100, 100);
   --color-accent1: rgb(230, 156, 29);
 
   /* Fonts */
   --cursive-font: 'Lobster', cursive;
   --sidebar-font: 'Open Sans', sans-serif;
-  --splash-font: 'SelawikRegular';
+  --splash-font: 'Work Sans', sans-serif;
 
   /* MEDIUM SCREENS */
   /* Font sizes medium screens */
@@ -17,6 +18,7 @@
   --home-font-size: 1.3em;
   --footer-small-size: .8em;
   --content-font-size: 1.3vw;
+  --content-num-size: 5vw;
 
   /* Font weight */
   --weight-hard: 600;
@@ -29,6 +31,9 @@
   /*Font size */
   --large-sidebar-font: 1.4vw;
   --large-content-font: 1.5vw;
+  --large-sidebar-icons: 1.5vw;
+  --large-h1-size: 3.5vw;
+  --large-h4-size: 2.8vw;
 
 }  
 
@@ -42,10 +47,14 @@ body {
 }
 
 p {
-  color: var(--color-white);
+  color: var(--color-lighter-black);
   font-family: var(--sidebar-font);
   font-size: var(--content-font-size);
   font-weight: var(--weight-hard);
+}
+
+h1 {
+  font-family: var(--splash-font);
 }
 
 .orange {
@@ -316,7 +325,9 @@ footer > span {
     /* end */
 
     /* About me */
+
     #aboutme {
+      position: relative;
       background-color: var(--color-white2);
       display: grid;
       grid-template-columns: auto;
@@ -325,6 +336,27 @@ footer > span {
         "title"
         "middleContent"
         "bottomContent";
+    }
+
+    #aboutme > p {
+      color:rgb(22, 23, 26);
+    }
+
+    #aboutBG {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }  
+
+    #aboutBG > p {
+      opacity: 0.05;
+      text-transform: uppercase;
+      font-size: 30vh;
     }
 
     #aboutTitle {
@@ -338,7 +370,20 @@ footer > span {
     #aboutTitle > h1 {
       font-size: 3em;
       font-weight: 800;
+      display: inline-block;
+      padding-bottom: 5px;
+      position: relative;
     }
+
+    #aboutTitle > h1:before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 1px;
+      bottom: 0;
+      left: 25%;
+      border-bottom: 2px solid rgb(167, 167, 167);
+  }
 
     #middleContent {
       grid-area: middleContent;
@@ -361,6 +406,40 @@ footer > span {
       grid-area: meStats;
     }
 
+    #meStats > hr {
+      color: var(--color-white);    
+      background-color: var(--color-white);
+      opacity: 0.25;
+      width: 150px;
+      margin-left: 0px;
+    }
+
+    .myButton {
+      box-shadow:inset 0px 1px 0px 0px #fce2c1;
+      background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+      background-color:#ffc477;
+      border-radius:6px;
+      border:1px solid #eeb44f;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:15px;
+      font-weight:bold;
+      padding:6px 24px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #cc9f52;
+    }
+    .myButton:hover {
+      background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+      background-color:#fb9e25;
+    }
+    .myButton:active {
+      position:relative;
+      top:1px;
+    }
+    
+
     #bottomContent{
       padding-bottom: 50px;
       grid-area: bottomContent;
@@ -374,8 +453,16 @@ footer > span {
       grid-area: education;
     }
 
+    #education > p {
+      font-size: 1.2vw;
+    }
+
     #experience {
       grid-area: experience;
+    }
+
+    #experience > p, #projectsNum > p {
+      font-size: 1.8vw;
     }
 
     #projectsNum {
@@ -461,10 +548,18 @@ footer > span {
     font-size: var(--large-content-font);
   }
 
+  h1 {
+    font-size: var(--large-h1-size) !important;
+  }
+
+  h4 {
+    font-size: var(--large-h4-size);
+  }
+
   #logo{
-    width: 4vw;
-    height: 4vw;
-    margin-left: 30px;
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-left: 15px;
   }
 
   /*  Sidebar */
@@ -472,8 +567,23 @@ footer > span {
     width: 300px;
   }
 
+  #myName {
+    font-size: 2vw;
+  }
+
   li > a {
     font-size: var(--large-sidebar-font);
+  }
+
+  #sidebarIcons {
+    font-size: var(--large-sidebar-icons);
+  }
+
+  /* end */
+
+  /* about me */
+  #meStats > hr {
+    width: 300px;
   }
 
   /* end */
