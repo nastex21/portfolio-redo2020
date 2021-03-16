@@ -11,17 +11,24 @@
   --sidebar-font: 'Open Sans', sans-serif;
   --splash-font: 'SelawikRegular';
 
-  /* Font sizes */
-  --splash-size: 1.2em;
+  /* MEDIUM SCREENS */
+  /* Font sizes medium screens */
+  --splash-size: 1.8vw;
   --home-font-size: 1.3em;
   --footer-small-size: .8em;
+  --content-font-size: 1.3vw;
 
   /* Font weight */
   --weight-hard: 600;
   --weight-hardest: 800;
 
-  /* Icon sizes */
+  /* Icon sizes medium secreens */
   --service-icons: 2em; 
+
+  /*LARGE SCREENS */
+  /*Font size */
+  --large-sidebar-font: 1.4vw;
+  --large-content-font: 1.5vw;
 
 }  
 
@@ -37,6 +44,7 @@ body {
 p {
   color: var(--color-white);
   font-family: var(--sidebar-font);
+  font-size: var(--content-font-size);
   font-weight: var(--weight-hard);
 }
 
@@ -66,7 +74,7 @@ footer > span {
 
 /* DESKTOP */
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   body, html, #root, #app {
     height: 600vh;
   }
@@ -204,8 +212,7 @@ footer > span {
       position: absolute;
       top: 0;
       left: 0;
-      margin-left: 10px;
-      margin-top: 10px;
+      margin-left: 20px;
     }
 
 
@@ -310,7 +317,7 @@ footer > span {
 
     /* About me */
     #aboutme {
-      background-color: var(--color-white2) !important;
+      background-color: var(--color-white2);
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: 20% 50% 30%;
@@ -446,5 +453,29 @@ footer > span {
     }
 
     /* end */
+
+}
+
+@media screen and (min-width: 1600px) {
+  p {
+    font-size: var(--large-content-font);
+  }
+
+  #logo{
+    width: 4vw;
+    height: 4vw;
+    margin-left: 30px;
+  }
+
+  /*  Sidebar */
+  .wrapper, #sidebar {
+    width: 300px;
+  }
+
+  li > a {
+    font-size: var(--large-sidebar-font);
+  }
+
+  /* end */
 
 }
