@@ -5,7 +5,7 @@ function AboutMe() {
     return (
         <section id="aboutme">
             <div id="aboutTitle">
-                <h1>Who Am I?</h1>
+                <h1>Who am I?</h1>
             </div>
             <div id="middleContent">
                 <div id="meContent">
@@ -33,7 +33,7 @@ function AboutMe() {
                     <p>4</p>
                 </div>
                 <div id="projectsNum">
-                    <h3>Projects</h3>
+                    <h1>Projects</h1>
                     <p>30+</p>
                 </div>
             </div>

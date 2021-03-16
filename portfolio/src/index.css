@@ -328,6 +328,11 @@ footer > span {
       justify-content: center;
     }
 
+    #aboutTitle > h1 {
+      font-size: 3em;
+      font-weight: 800;
+    }
+
     #middleContent {
       grid-area: middleContent;
       display: grid;
@@ -349,7 +354,7 @@ footer > span {
       grid-area: bottomContent;
       display: grid;
       grid-template-rows: auto;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 35% 35% 30%;
       grid-template-areas: "education experience projectsNum";
     }
 
