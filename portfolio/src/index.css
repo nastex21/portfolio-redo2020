@@ -313,7 +313,7 @@ footer > span {
       background-color: var(--color-white2) !important;
       display: grid;
       grid-template-columns: auto;
-      grid-template-rows: 20% 60% 20%;
+      grid-template-rows: 20% 50% 30%;
       grid-template-areas: 
         "title"
         "middleContent"
@@ -346,11 +346,16 @@ footer > span {
       grid-area: meContent;
     }
 
+    #middleContent > div, #bottomContent > div {
+      padding-left: 50px;
+    }
+
     #meStats {
       grid-area: meStats;
     }
 
     #bottomContent{
+      padding-bottom: 50px;
       grid-area: bottomContent;
       display: grid;
       grid-template-rows: auto;
