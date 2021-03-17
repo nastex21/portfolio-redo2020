@@ -4,6 +4,7 @@ import Footer from './Footer';
 function Contact() {
 
     return (
+        <>
             <section id="contact">
                 <div id="contactBody">
                     <div id="contactHeader">
@@ -27,8 +28,9 @@ function Contact() {
                         </div>
                     </div>
                 </div>
-                <Footer />
             </section>
+            <Footer />
+        </>
     )
 };
 

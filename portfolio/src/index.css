@@ -527,16 +527,59 @@ footer > span {
     /* Contact */
 
     #contact {
-      display: flex;
-      flex-direction: column;
+      width: 100%;
+      height: 100vh;
     }
 
-    /* end */
+    #contactBody{
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 40% 60%;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      "contactHeader contactContent"
+    }
 
+    #contactHeader {
+      grid-area: contactHeader;
+    }
+
+    #contactContent {
+      grid-area: contactContent;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: 30% 60% 10%;
+      grid-template-areas:
+      "contactName contactEmail"
+      "contactMsg contactMsg"
+      ". contactSubmit"
+    }
+
+    #contactName {
+      grid-area: contactName;
+    }
+
+    #contactEmail {
+      grid-area: contactEmail;
+    }
+
+    #contactMessage {
+      grid-area: contactMsg;
+      width: 100%;
+      height: 100%;
+    }
+    #contactMessage > input {
+      width: 100%;
+      height: 80%;
+    }
+
+    #contactSubmit {
+      grid-area: contactSubmit
+    }
     /* Footer */
     footer {
-      width: 100%;
-      margin-top: auto;
+
     }
 
     /* end */
