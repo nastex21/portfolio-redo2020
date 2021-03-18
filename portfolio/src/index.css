@@ -529,12 +529,22 @@ footer > span {
     #contact {
       width: 100%;
       height: 100vh;
+      background-color: #E9E9E9;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
     }
 
     #contactBody{
-      width: 100%;
-      height: 100%;
-      border: 1px solid rgb(48, 47, 47);
+      width: 95%;
+      height: 95%;
+      margin: 0 auto;
+      background-color: white;
+      border: 1px solid rgb(252, 252, 252);
+      border-radius: 6px;
+      box-shadow: 2px 1px 6px #000;
       display: grid;
       grid-template-columns: 40% 60%;
       grid-template-rows: auto;
@@ -544,6 +554,12 @@ footer > span {
 
     #contactHeader {
       grid-area: contactHeader;
+    }
+
+    #contactHeader > p {
+      font-size: 3vw;
+      text-align: center;
+      margin-top: 50px;
     }
 
     #contactContent {
@@ -557,6 +573,10 @@ footer > span {
       ". contactSubmit"
     }
 
+    #contactContent > div {
+      margin-top: 50px;
+    }
+
     #contactName {
       grid-area: contactName;
     }
@@ -565,13 +585,20 @@ footer > span {
       grid-area: contactEmail;
     }
 
+    #contactName > input, #contactEmail > input, #contactMessage > input {
+      width: calc(100% - 20px);
+    }
+
+    .contactContent {
+      font-size: 1.5vw;
+    }
+
     #contactMessage {
       grid-area: contactMsg;
       width: 100%;
       height: 100%;
     }
     #contactMessage > input {
-      width: 100%;
       height: 80%;
     }
 
@@ -584,6 +611,7 @@ footer > span {
     #contactSubmit > input {
       width: 50%;
       right: 0;
+      margin-right: 20px;
     }
 
     /* Footer */
