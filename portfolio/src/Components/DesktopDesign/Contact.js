@@ -13,15 +13,15 @@ function Contact() {
                     <div id="contactContent">
                         <div id="contactName">
                             <p>Name:</p>
-                            <input type="text"/>
+                            <input type="text" name="name" placeholder="Enter your name" id="name" />
                         </div>
                         <div id="ContactEmail">
                             <p>Email:</p>
-                            <input type="email" name="" id=""/>
+                            <input type="email" name="email" placeholder="Enter your email" id="email"/>
                         </div>
                         <div id="contactMessage">
                             <p>Message:</p>
-                            <input type="text" name="" id=""/>
+                            <input type="text" name="message" placeholder="Enter your message" id="message"/>
                         </div>
                         <div id="contactSubmit">
                             <input type="submit" value=""/>
