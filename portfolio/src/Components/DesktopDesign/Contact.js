@@ -24,7 +24,7 @@ function Contact() {
                             <input type="text" name="message" placeholder="Enter your message" id="message"/>
                         </div>
                         <div id="contactSubmit">
-                            <input type="submit" value=""/>
+                            <input type="submit" value="Send" />
                         </div>
                     </div>
                 </div>
